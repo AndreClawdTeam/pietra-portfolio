@@ -10,12 +10,28 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      {/* Hero Section */}
+      {/* Hero Section - Redesigned with full image area */}
       <section className="relative bg-gradient-to-r from-pink-50 to-pink-100 min-h-[90vh] flex items-center pt-24">
-        <div className="container mx-auto px-6 z-10">
-          <div className="md:flex md:items-center md:justify-between">
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-50 to-pink-100 z-0"></div>
+
+        {/* Background image - visible on larger screens */}
+        <div className="absolute inset-0 md:left-1/2 z-0 hidden md:block">
+          <div className="relative w-full h-full">
+            <Image
+              src={siteContent.hero.image.src}
+              alt=""
+              fill
+              priority
+              className="object-cover object-center opacity-90"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-50 to-transparent"></div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="md:flex md:items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
                 {siteContent.hero.headline}
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -28,14 +44,15 @@ export default function Home() {
                 {siteContent.hero.ctaText}
               </a>
             </div>
-            <div className="md:w-1/2 flex justify-center">
-              <div className="relative h-72 w-72 md:h-96 md:w-96 rounded-full overflow-hidden border-1 border-white shadow-xl">
+
+            {/* Image for mobile only - shown centrally */}
+            <div className="md:hidden w-full flex justify-center mt-8">
+              <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src={siteContent.hero.image.src}
                   alt={siteContent.hero.image.alt}
                   fill
                   priority
-                  sizes="(max-width: 768px) 18rem, 24rem"
                   className="object-cover"
                 />
               </div>
