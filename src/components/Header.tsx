@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import siteContent from "@/content/siteContent";
 
 export default function Header() {
@@ -25,8 +26,15 @@ export default function Header() {
     >
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-gray-800">
-            {siteContent.navigation.brand}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo/logo-transparent.png"
+              alt={siteContent.navigation.brand}
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Mobile menu button */}
