@@ -1,3 +1,6 @@
+const WHATSAPP_NUMBER = "5551982903170";
+const INSTAGRAM_URL = "https://instagram.com/nutricionistapietra";
+
 export const siteContent = {
   // General site info
   site: {
@@ -5,7 +8,7 @@ export const siteContent = {
     description:
       "Emagreça de forma definitiva com o método 3C's para mulheres que descontam emoções na comida. +400kg eliminados com resultados que duram.",
     address: "R. João Cachoeira, 488 - Conj 1009 - Itaim Bibi, São Paulo",
-    whatsappNumber: "5511xxxxxxxxx", // Replace with actual number
+    whatsappNumber: WHATSAPP_NUMBER,
   },
 
   // Navigation header
@@ -19,7 +22,7 @@ export const siteContent = {
     ],
     cta: {
       label: "Agende Agora",
-      href: "https://wa.me/5511xxxxxxxxx", // Replace with actual number
+      href: `https://wa.me/${WHATSAPP_NUMBER}`,
     },
   },
 
@@ -52,6 +55,8 @@ export const siteContent = {
   // About section
   about: {
     title: "Nutrição Comportamental",
+    description:
+      "Mais de 400kg eliminados com o método 3C&apos;s por mulheres que descontavam suas emoções na comida.",
     cards: [
       {
         title: "Plano Personalizado",
@@ -169,8 +174,22 @@ export const siteContent = {
     title: "Entre em Contato",
     description:
       "Estou pronta para te ajudar a transformar sua relação com a comida. Entre em contato para saber mais sobre o método 3C's.",
-    ctaText: "WhatsApp",
     address: "R. João Cachoeira, 488 - Conj 1009 - Itaim Bibi, São Paulo",
+    socialCards: {
+      whatsapp: {
+        title: "WhatsApp",
+        description:
+          "Tire suas dúvidas e agende sua consulta diretamente pelo WhatsApp",
+        buttonText: "Falar agora",
+      },
+      instagram: {
+        title: "Instagram",
+        description:
+          "Conheça meu trabalho e acompanhe dicas de nutrição comportamental",
+        buttonText: "Seguir",
+      },
+    },
+    ctaText: "WhatsApp",
   },
 
   // Footer
@@ -181,12 +200,12 @@ export const siteContent = {
     socialLinks: [
       {
         name: "WhatsApp",
-        href: "https://wa.me/5511xxxxxxxxx", // Replace with actual number
+        href: `https://wa.me/${WHATSAPP_NUMBER}`,
         icon: "whatsapp",
       },
       {
         name: "Instagram",
-        href: "https://instagram.com/", // Replace with actual Instagram handle
+        href: INSTAGRAM_URL,
         icon: "instagram",
       },
     ],
