@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "@/components/Header";
 import MethodSection from "@/components/MethodSection";
 import Counter from "@/components/Counter";
@@ -28,11 +29,15 @@ export default function Home() {
               </a>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <div className="relative h-72 w-72 md:h-96 md:w-96 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                {/* Replace with actual image of Pietra */}
-                <div className="absolute inset-0 bg-pink-200 flex items-center justify-center text-pink-800 text-lg font-medium">
-                  {siteContent.hero.image.alt}
-                </div>
+              <div className="relative h-72 w-72 md:h-96 md:w-96 rounded-full overflow-hidden border-1 border-white shadow-xl">
+                <Image
+                  src={siteContent.hero.image.src}
+                  alt={siteContent.hero.image.alt}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 18rem, 24rem"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -89,11 +94,14 @@ export default function Home() {
         <div className="container mx-auto px-6 flex flex-col gap-12">
           <div className="md:flex items-center gap-12">
             <div className="md:w-1/3 mb-8 md:mb-0">
-              <div className="aspect-square rounded-lg bg-pink-100 flex items-center justify-center">
-                {/* Replace with actual image */}
-                <div className="text-pink-800 text-lg font-medium">
-                  {siteContent.aboutPietra.image.alt}
-                </div>
+              <div className="aspect-square rounded-lg overflow-hidden shadow-md relative">
+                <Image
+                  src={siteContent.aboutPietra.image.src}
+                  alt={siteContent.aboutPietra.image.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
               </div>
             </div>
             <div className="md:w-2/3">

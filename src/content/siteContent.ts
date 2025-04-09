@@ -31,8 +31,8 @@ export const siteContent = {
       "Com o método 3C's, mais de 400kg já foram eliminados por mulheres que descontavam suas emoções na comida. Você nunca mais terá que emagrecer novamente.",
     ctaText: "Quero saber mais",
     image: {
-      alt: "Foto Pietra Fogaça",
-      src: "/images/pietra.jpg", // Replace with actual image path
+      alt: "Pietra Fogaça - Nutricionista",
+      src: "/assets/nutricionista-pietra-fogaca.png",
     },
   },
 
@@ -104,8 +104,8 @@ export const siteContent = {
   aboutPietra: {
     title: "Sobre Pietra Fogaça",
     image: {
-      alt: "Foto Pietra Fogaça",
-      src: "/images/pietra-profile.jpg", // Replace with actual image path
+      alt: "Pietra Fogaça Nutricionista com Jaleco",
+      src: "/assets/nutricionista-pietra-fogaca-de-jaleco.png",
     },
     paragraphs: [
       "Nutricionista comportamental especializada em ajudar mulheres que descontam suas emoções na comida. Com base em São Paulo e Porto Alegre, já ajudei centenas de mulheres a transformarem definitivamente sua relação com a alimentação.",
