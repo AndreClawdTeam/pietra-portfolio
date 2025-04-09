@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import siteContent from "@/content/siteContent";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function Header() {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl font-bold text-gray-800">
-            Pietra Fogaça
+            {siteContent.navigation.brand}
           </Link>
 
           {/* Mobile menu button */}
@@ -60,13 +61,13 @@ export default function Header() {
 
           {/* Desktop menu */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <NavLink href="#sobre">Sobre</NavLink>
-            <NavLink href="#metodo">O Método 3C&apos;s</NavLink>
-            <NavLink href="#resultados">Resultados</NavLink>
-            <NavLink href="#faq">FAQ</NavLink>
-            <NavLink href="#contato">Contato</NavLink>
-            <NavLink href="https://wa.me/5511xxxxxxxxx" isButton={true}>
-              Agende Agora
+            {siteContent.navigation.links.map((link, index) => (
+              <NavLink key={index} href={link.href}>
+                {link.label}
+              </NavLink>
+            ))}
+            <NavLink href={siteContent.navigation.cta.href} isButton={true}>
+              {siteContent.navigation.cta.label}
             </NavLink>
           </nav>
         </div>
@@ -78,27 +79,21 @@ export default function Header() {
           }`}
         >
           <nav className="flex flex-col space-y-4 py-4">
-            <NavLink href="#sobre" onClick={() => setIsMenuOpen(false)}>
-              Sobre
-            </NavLink>
-            <NavLink href="#metodo" onClick={() => setIsMenuOpen(false)}>
-              O Método 3C&apos;s
-            </NavLink>
-            <NavLink href="#resultados" onClick={() => setIsMenuOpen(false)}>
-              Resultados
-            </NavLink>
-            <NavLink href="#faq" onClick={() => setIsMenuOpen(false)}>
-              FAQ
-            </NavLink>
-            <NavLink href="#contato" onClick={() => setIsMenuOpen(false)}>
-              Contato
-            </NavLink>
+            {siteContent.navigation.links.map((link, index) => (
+              <NavLink
+                key={index}
+                href={link.href}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </NavLink>
+            ))}
             <NavLink
-              href="https://wa.me/5511xxxxxxxxx"
+              href={siteContent.navigation.cta.href}
               isButton={true}
               onClick={() => setIsMenuOpen(false)}
             >
-              Agende Agora
+              {siteContent.navigation.cta.label}
             </NavLink>
           </nav>
         </div>

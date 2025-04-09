@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import siteContent from "@/content/siteContent";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,9 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pietra Fogaça | Nutricionista Comportamental",
-  description:
-    "Emagreça de forma definitiva com o método 3C's para mulheres que descontam emoções na comida. +400kg eliminados com resultados que duram.",
+  title: siteContent.site.title,
+  description: siteContent.site.description,
 };
 
 export default function RootLayout({

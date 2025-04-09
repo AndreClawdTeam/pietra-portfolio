@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import siteContent from "@/content/siteContent";
 
 interface FAQItem {
   question: string;
@@ -21,7 +22,7 @@ export default function FAQ({ items }: FAQProps) {
   return (
     <div className="w-full max-w-3xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
-        Perguntas Frequentes
+        {siteContent.faq.title}
       </h2>
 
       <div className="space-y-4">
