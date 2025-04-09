@@ -13,8 +13,7 @@ export const siteContent = {
     brand: "Pietra Fogaça",
     links: [
       { label: "Sobre", href: "#sobre" },
-      { label: "O Método 3C's", href: "#metodo" },
-      { label: "Resultados", href: "#resultados" },
+      { label: "Método", href: "#metodo" },
       { label: "FAQ", href: "#faq" },
       { label: "Contato", href: "#contato" },
     ],

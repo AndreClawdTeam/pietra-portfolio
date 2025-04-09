@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* About Pietra Section */}
-      <section className="py-16 bg-white">
+      <section id="sobre" className="py-16 bg-white">
         <div className="container mx-auto px-6 flex flex-col gap-12">
           <div className="md:flex items-center gap-12">
             <div className="md:w-1/3 mb-8 md:mb-0">
