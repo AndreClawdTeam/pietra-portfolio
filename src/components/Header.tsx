@@ -21,7 +21,9 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+        isScrolled
+          ? "bg-white shadow-md py-2"
+          : "bg-white md:bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-6">
