@@ -116,6 +116,7 @@ export const siteContent = {
       "Meu método 3C's já eliminou mais de 400kg, mas o mais importante: meus clientes aprendem a nunca mais precisar emagrecer novamente.",
       "Acredito que a nutrição vai além de calorias e macronutrientes - é sobre entender a relação emocional com a comida e desenvolver hábitos sustentáveis.",
     ],
+    ctaText: "Quero agendar uma consulta",
   },
 
   // Testimonials
@@ -180,7 +181,7 @@ export const siteContent = {
         title: "WhatsApp",
         description:
           "Tire suas dúvidas e agende sua consulta diretamente pelo WhatsApp",
-        buttonText: "Falar agora",
+        buttonText: "Mandar mensagem",
       },
       instagram: {
         title: "Instagram",

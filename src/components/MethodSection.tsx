@@ -49,6 +49,8 @@ export default function MethodSection() {
           <a
             href={`https://wa.me/${siteContent.site.whatsappNumber}`}
             className="inline-block bg-pink-600 text-white font-medium py-3 px-8 rounded-full hover:bg-pink-700 transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {siteContent.method.ctaText}
           </a>

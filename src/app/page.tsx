@@ -40,6 +40,8 @@ export default function Home() {
               <a
                 href={`https://wa.me/${siteContent.site.whatsappNumber}`}
                 className="inline-block bg-pink-600 text-white font-medium py-3 px-8 rounded-full hover:bg-pink-700 transition duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {siteContent.hero.ctaText}
               </a>
@@ -129,6 +131,14 @@ export default function Home() {
                   {paragraph}
                 </p>
               ))}
+              <a
+                href={`https://wa.me/${siteContent.site.whatsappNumber}`}
+                className="inline-block bg-pink-600 text-white font-medium py-3 px-8 rounded-full hover:bg-pink-700 transition duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {siteContent.aboutPietra.ctaText}
+              </a>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -193,6 +203,8 @@ export default function Home() {
                 <a
                   href={`https://wa.me/${siteContent.site.whatsappNumber}`}
                   className="mt-auto inline-block bg-white text-green-600 font-medium py-3 px-8 rounded-full hover:bg-green-50 transition duration-300 shadow-md"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {siteContent.contact.socialCards.whatsapp.buttonText}
                 </a>
@@ -252,6 +264,8 @@ export default function Home() {
                   href={link.href}
                   className="hover:text-pink-400 transition duration-300"
                   aria-label={link.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {link.icon === "whatsapp" ? (
                     <svg
