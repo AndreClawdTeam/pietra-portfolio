@@ -14,7 +14,7 @@ export const siteContent = {
 
   // Navigation header
   navigation: {
-    brand: "Pietra Fogaça",
+    brand: "Nutricionista Pietra Fogaça",
     links: [
       { label: "Sobre", href: "#sobre" },
       { label: "Método", href: "#metodo" },
@@ -228,12 +228,17 @@ export const siteContent = {
       {
         name: "WhatsApp",
         href: `https://wa.me/${WHATSAPP_NUMBER}`,
-        icon: "whatsapp",
+        icon: "whatsapp" as const,
       },
       {
         name: "Instagram",
         href: INSTAGRAM_URL,
-        icon: "instagram",
+        icon: "instagram" as const,
+      },
+      {
+        name: "Email",
+        href: `mailto:${EMAIL}`,
+        icon: "email" as const,
       },
     ],
   },
