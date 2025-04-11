@@ -60,7 +60,7 @@ export const siteContent = {
   about: {
     title: "Nutrição Comportamental",
     description:
-      "Mais de 400kg eliminados com o método 3C&apos;s por mulheres que descontavam suas emoções na comida.",
+      "Mais de 400kg eliminados com o método 3C's por mulheres que descontavam suas emoções na comida.",
     cards: [
       {
         title: "Plano Personalizado",
