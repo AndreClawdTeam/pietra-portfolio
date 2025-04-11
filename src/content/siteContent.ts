@@ -38,7 +38,7 @@ export const siteContent = {
     ctaText: "Quero saber mais",
     image: {
       alt: "Pietra Fogaça - Nutricionista",
-      src: "/assets/nutricionista-pietra-fogaca.png",
+      src: "/assets/nutricionista-pietra-fogaca-esperando-pra-atender-voce.jpg",
     },
   },
 
@@ -113,7 +113,7 @@ export const siteContent = {
     title: "Sobre Pietra Fogaça",
     image: {
       alt: "Pietra Fogaça Nutricionista com Jaleco",
-      src: "/assets/nutricionista-pietra-fogaca-de-jaleco.png",
+      src: "/assets/sobre-a-nutricionista-pietra-fogaca.jpg",
     },
     paragraphs: [
       "Nutricionista comportamental especializada em ajudar mulheres que descontam suas emoções na comida. Com base em São Paulo e Porto Alegre, já ajudei centenas de mulheres a transformarem definitivamente sua relação com a alimentação.",
@@ -173,11 +173,13 @@ export const siteContent = {
       },
       {
         question: "E se eu já tentei de tudo e nada funcionou?",
-        answer: "To-do",
+        answer:
+          "Isso é mais comum do que você imagina. Muitas das minhas pacientes chegaram até mim depois de anos tentando sozinhas ou passando por dietas super restritivas que não funcionaram a longo prazo. Mas aqui, a abordagem é diferente: não se trata de cortar tudo, nem de viver presa em regras alimentares. A gente vai entender de verdade o que está por trás das suas dificuldades, desde sabotadores internos até os gatilhos emocionais. Você não falhou. O que faltava era o caminho certo, com suporte, acolhimento e estratégias que respeitam sua rotina e sua história. E eu tô aqui pra caminhar com você nisso.",
       },
       {
         question: "E se eu tiver vergonha de pedir ajuda?",
-        answer: "To-do",
+        answer:
+          "Você não precisa ter vergonha de sentir o que sente. Muita gente carrega culpa, medo ou insegurança quando o assunto é alimentação, corpo ou autoestima. Mas pedir ajuda não é sinal de fraqueza, é um ato de coragem e autocuidado. Meu papel aqui é te acolher, te ouvir sem julgamentos e construir um plano leve, possível e totalmente seu. A consulta é um espaço seguro, onde você pode ser quem você é. As minhas pacientes costumam enviar áudios e textões até no sábado e no domingo, e eu não só não me importo como AMO ver pessoas tão dedicas no próprio autodesenvolvimento! Pode vir com medo mesmo. Eu te recebo com empatia e braços abertos.",
       },
     ],
   },
@@ -216,6 +218,13 @@ export const siteContent = {
       },
     },
     ctaText: "WhatsApp",
+    clinicImage: {
+      src: "/assets/clinica-para-atendimento-com-a-nutricionista-pietra.JPG",
+      alt: "Clinica para atendimento com a nutricionista Pietra",
+    },
+    clinicSection: {
+      title: "Onde atendemos",
+    },
   },
 
   // Footer

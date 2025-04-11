@@ -23,7 +23,7 @@ export default function Home() {
               alt=""
               fill
               priority
-              className="object-cover object-center opacity-90"
+              className="object-cover object-top opacity-90"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-pink-50 to-transparent"></div>
           </div>
@@ -116,7 +116,7 @@ export default function Home() {
                   alt={siteContent.aboutPietra.image.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
@@ -234,16 +234,30 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div>
 
-          <div className="text-center mt-12 text-gray-600 flex flex-col gap-4">
-            {siteContent.contact.addresses.map((address, index) => (
-              <p key={index}>
-                <span className="font-semibold">{address.city}:</span>{" "}
-                {address.label}{" "}
-                <span className="text-gray-400">({address.address})</span>
-              </p>
-            ))}
+            <div className="relative col-span-2">
+              <div className="aspect-video rounded-lg overflow-hidden shadow-md relative">
+                <Image
+                  src={siteContent.contact.clinicImage.src}
+                  alt={siteContent.contact.clinicImage.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover object-center blur-xs"
+                />
+              </div>
+              <div className="bg-black/40 absolute top-0 left-0 w-full h-full text-center text-white flex flex-col gap-8 items-center justify-center p-8">
+                <h2 className="text-2xl font-bold">
+                  {siteContent.contact.clinicSection.title}
+                </h2>
+                {siteContent.contact.addresses.map((address, index) => (
+                  <div key={index}>
+                    <p className="font-semibold">{address.city}</p>
+                    <p>{address.label}</p>
+                    <p className="text-white">{address.address}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
