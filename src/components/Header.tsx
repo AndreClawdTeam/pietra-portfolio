@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import siteContent from "@/content/siteContent";
+import { CtaButton, ctaButtonColorCn } from "./CtaButton";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,35 +40,44 @@ export default function Header() {
             />
           </Link>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden text-gray-800 focus:outline-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          {/* Mobile menu */}
+          <div className="md:hidden flex items-center gap-2">
+            {/* Mobile CTA button */}
+            <CtaButton
+              content={siteContent.navigation.ctaMobile.label}
+              className="!px-4 !py-2"
+            />
+
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden text-gray-800 focus:outline-none"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
 
           {/* Desktop menu */}
           <nav className="hidden md:flex space-x-8 items-center">
@@ -102,6 +112,7 @@ export default function Header() {
               href={siteContent.navigation.cta.href}
               isButton={true}
               onClick={() => setIsMenuOpen(false)}
+              className="hidden md:block"
             >
               {siteContent.navigation.cta.label}
             </NavLink>
@@ -117,19 +128,27 @@ interface NavLinkProps {
   children: React.ReactNode;
   isButton?: boolean;
   onClick?: () => void;
+  className?: string;
 }
 
-function NavLink({ href, children, isButton = false, onClick }: NavLinkProps) {
+function NavLink({
+  href,
+  children,
+  isButton = false,
+  onClick,
+  className,
+}: NavLinkProps) {
   return (
     <Link
       href={href}
       onClick={onClick}
       className={`
-        transition-colors duration-300
+        ${className}
+        transition-colors duration-300 font-medium text-lg
         ${
           isButton
-            ? "bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-700"
-            : "text-gray-800 hover:text-pink-600"
+            ? `${ctaButtonColorCn} px-4 py-2 rounded-full`
+            : "text-gray-800 hover:text-pink-500"
         }
       `}
     >

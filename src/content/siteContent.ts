@@ -1,5 +1,6 @@
-const WHATSAPP_NUMBER = "5551982903170";
+const WHATSAPP_NUMBER = "5511991538151";
 const INSTAGRAM_URL = "https://instagram.com/nutricionistapietra";
+const EMAIL = "agendamentosnutripietra@hotmail.com";
 
 export const siteContent = {
   // General site info
@@ -24,13 +25,16 @@ export const siteContent = {
       label: "Agende Agora",
       href: `https://wa.me/${WHATSAPP_NUMBER}`,
     },
+    ctaMobile: {
+      label: "Agendar",
+    },
   },
 
   // Hero section
   hero: {
-    headline: "Transforme sua relação com a comida definitivamente.",
+    headline: "Já tentou de tudo e nada funcionou?",
     description:
-      "Com o método 3C's, mais de 400kg já foram eliminados por mulheres que descontavam suas emoções na comida. Você nunca mais terá que emagrecer novamente.",
+      "Eu te ajudo a emagrecer de forma leve, sem culpa, sem dieta restritiva e sem abrir mão da sua vida social.",
     ctaText: "Quero saber mais",
     image: {
       alt: "Pietra Fogaça - Nutricionista",
@@ -167,6 +171,14 @@ export const siteContent = {
         answer:
           "Entre em contato pelo WhatsApp para agendarmos uma consulta inicial. Nessa primeira conversa, vamos entender sua história, objetivos e discutir como o método 3C's pode te ajudar.",
       },
+      {
+        question: "E se eu já tentei de tudo e nada funcionou?",
+        answer: "To-do",
+      },
+      {
+        question: "E se eu tiver vergonha de pedir ajuda?",
+        answer: "To-do",
+      },
     ],
   },
 
@@ -175,7 +187,20 @@ export const siteContent = {
     title: "Entre em Contato",
     description:
       "Estou pronta para te ajudar a transformar sua relação com a comida. Entre em contato para saber mais sobre o método 3C's.",
-    address: "R. João Cachoeira, 488 - Conj 1009 - Itaim Bibi, São Paulo",
+    addresses: [
+      {
+        city: "São Paulo",
+        label: "Núcleo Haya",
+        address:
+          "João Cachoeira, 488 - conjunto 1009 - Itaim Bibi, São Paulo - SP",
+      },
+      {
+        city: "Porto Alegre",
+        label: "Wall Street Profissional Center",
+        address:
+          "Av. Cristóvão Colombo, 1918 - sala 303 - Floresta, Porto Alegre - RS",
+      },
+    ],
     socialCards: {
       whatsapp: {
         title: "WhatsApp",
@@ -197,6 +222,7 @@ export const siteContent = {
   footer: {
     name: "Pietra Fogaça",
     title: "Nutricionista Comportamental",
+    email: EMAIL,
     copyright: "Todos os direitos reservados.",
     socialLinks: [
       {

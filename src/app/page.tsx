@@ -4,7 +4,7 @@ import MethodSection from "@/components/MethodSection";
 import Counter from "@/components/Counter";
 import FAQ from "@/components/FAQ";
 import siteContent from "@/content/siteContent";
-
+import { CtaButton } from "@/components/CtaButton";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-6 relative z-10 pb-12 pt-12 md:pt-0 md:pb-0">
           <div className="md:flex md:items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
@@ -37,23 +37,20 @@ export default function Home() {
               <p className="text-lg md:text-xl text-gray-700 mb-8">
                 {siteContent.hero.description}
               </p>
-              <a
-                href={`https://wa.me/${siteContent.site.whatsappNumber}`}
-                className="inline-block bg-pink-600 text-white font-medium py-3 px-8 rounded-full hover:bg-pink-700 transition duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {siteContent.hero.ctaText}
-              </a>
+              <CtaButton
+                content={siteContent.hero.ctaText}
+                className="inline-block"
+              />
             </div>
 
             {/* Image for mobile only - shown centrally */}
             <div className="md:hidden w-full flex justify-center mt-8">
-              <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-xl">
+              <div className="relative w-full h-auto rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src={siteContent.hero.image.src}
                   alt={siteContent.hero.image.alt}
-                  fill
+                  width={1000}
+                  height={1000}
                   priority
                   className="object-cover"
                 />
@@ -131,14 +128,10 @@ export default function Home() {
                   {paragraph}
                 </p>
               ))}
-              <a
-                href={`https://wa.me/${siteContent.site.whatsappNumber}`}
-                className="inline-block bg-pink-600 text-white font-medium py-3 px-8 rounded-full hover:bg-pink-700 transition duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {siteContent.aboutPietra.ctaText}
-              </a>
+              <CtaButton
+                content={siteContent.hero.ctaText}
+                className="inline-block"
+              />
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -242,8 +235,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center mt-12 text-gray-600">
-            <p>{siteContent.contact.address}</p>
+          <div className="text-center mt-12 text-gray-600 flex flex-col gap-4">
+            {siteContent.contact.addresses.map((address, index) => (
+              <p key={index}>
+                <span className="font-semibold">{address.city}:</span>{" "}
+                {address.label}{" "}
+                <span className="text-gray-400">({address.address})</span>
+              </p>
+            ))}
           </div>
         </div>
       </section>
