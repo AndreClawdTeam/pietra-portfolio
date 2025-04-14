@@ -78,33 +78,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Method Section */}
-      <MethodSection />
-
-      {/* Results Section */}
-      <section className="py-16 bg-pink-50" id="resultados">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
-            {siteContent.about.title}
-          </h2>
-          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-            {siteContent.about.description}
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {siteContent.about.cards.map((card, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="flex items-center mb-4">
-                  <div>
-                    <h4 className="font-bold">{card.title}</h4>
-                  </div>
-                </div>
-                <p className="text-gray-700">{card.content}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* About Pietra Section */}
       <section id="sobre" className="py-16 bg-white">
         <div className="container mx-auto px-6 flex flex-col gap-12">
@@ -119,6 +92,9 @@ export default function Home() {
                   className="object-cover object-top"
                 />
               </div>
+              <p className="text-xs text-gray-600 text-center mt-1">
+                CRN: {siteContent.aboutPietra.crn}
+              </p>
             </div>
             <div className="md:w-2/3">
               <h1 className="text-3xl font-bold mb-6 text-gray-800">
@@ -130,7 +106,7 @@ export default function Home() {
                 </p>
               ))}
               <CtaButton
-                content={siteContent.hero.ctaText}
+                content={siteContent.aboutPietra.ctaText}
                 className="inline-block"
               />
             </div>
@@ -156,6 +132,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Results Section */}
+      <section className="py-16 bg-pink-50" id="resultados">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
+            {siteContent.about.title}
+          </h2>
+          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+            {siteContent.about.description}
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {siteContent.about.cards.map((card, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div>
+                    <h4 className="font-bold">{card.title}</h4>
+                  </div>
+                </div>
+                <p className="text-gray-700">{card.content}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            <CtaButton
+              content={siteContent.about.ctaText}
+              className="inline-block"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Method Section */}
+      <MethodSection />
 
       {/* FAQ Section */}
       <section className="py-16 bg-pink-50" id="faq">

@@ -22,11 +22,11 @@ export const siteContent = {
       { label: "Contato", href: "#contato" },
     ],
     cta: {
-      label: "Agende Agora",
+      label: "AGENDAR CONSULTA",
       href: `https://wa.me/${WHATSAPP_NUMBER}`,
     },
     ctaMobile: {
-      label: "Agendar",
+      label: "AGENDAR",
     },
   },
 
@@ -35,7 +35,7 @@ export const siteContent = {
     headline: "Já tentou de tudo e nada funcionou?",
     description:
       "Eu te ajudo a emagrecer de forma leve, sem culpa, sem dieta restritiva e sem abrir mão da sua vida social.",
-    ctaText: "Quero saber mais",
+    ctaText: "AGENDAR CONSULTA",
     image: {
       alt: "Pietra Fogaça - Nutricionista",
       src: "/assets/nutricionista-pietra-fogaca-esperando-pra-atender-voce.jpg",
@@ -58,9 +58,9 @@ export const siteContent = {
 
   // About section
   about: {
-    title: "Nutrição Comportamental",
+    title: "Como Funciona o Acompanhamento?",
     description:
-      "Mais de 400kg eliminados com o método 3C's por mulheres que descontavam suas emoções na comida.",
+      "Aqui, a gente conversa de verdade e constrói juntas o que funciona pra você.",
     cards: [
       {
         title: "Plano Personalizado",
@@ -68,59 +68,61 @@ export const siteContent = {
           "Planos alimentares adaptados às suas necessidades emocionais, rotina e preferências.",
       },
       {
-        title: "Método Exclusivo",
+        title: "Contato direto",
         content:
-          "Uma abordagem única que trata a relação emocional com a comida, para resultados que duram para sempre.",
+          "Você terá acesso a mim entre as sessões pelo WhatsApp para dúvidas, apoio emocional ou ajustes no plano.",
       },
       {
-        title: "Apoio Contínuo",
+        title: "Transformações Reais",
         content:
-          "Tenha acesso direto para tirar dúvidas e ajustarmos seu plano sempre que necessário entre as consultas.",
+          "Mulheres que escolheram um caminho mais leve com a comida, com o corpo e com elas mesmas e descobriram que é possível emagrecer sem abrir mão da própria vida.",
       },
     ],
+    ctaText: "QUERO VIVER ESSA TRANSFORMAÇÃO",
   },
 
   // Method section
   method: {
     title: "O Método 3C's",
     description:
-      "Um método exclusivo que já ajudou centenas de mulheres a perderem mais de 400kg, transformando definitivamente sua relação com a comida.",
+      "Caminho leve e possível para transformar sua relação com a comida.",
     steps: [
       {
         title: "Conhecimento",
         description:
-          "Entenda como suas emoções influenciam seus hábitos alimentares e aprenda a identificar gatilhos emocionais.",
+          "Autoconhecimento e educação alimentar com base na sua rotina e história com a comida.",
         icon: "🧠",
       },
       {
         title: "Consciência",
         description:
-          "Desenvolva consciência plena para estar presente nas suas refeições e reconhecer a fome física vs. emocional.",
+          "Compreensão dos gatilhos emocionais, comportamentais e ambientais que afetam suas escolhas.",
         icon: "👁️",
       },
       {
         title: "Comportamento",
         description:
-          "Transforme seus comportamentos alimentares com estratégias práticas, sem restrições severas ou terrorismo nutricional.",
+          "Ações práticas, consistentes e possíveis que geram resultado a longo prazo — sem terrorismo nutricional.",
         icon: "🔄",
       },
     ],
-    ctaText: "Quero transformar minha relação com a comida",
+    ctaText: "QUERO COMEÇAR MINHA JORNADA COM O MÉTODO 3C'S",
   },
 
   // About Pietra section
   aboutPietra: {
     title: "Sobre Pietra Fogaça",
+    crn: "12141P",
     image: {
       alt: "Pietra Fogaça Nutricionista com Jaleco",
       src: "/assets/sobre-a-nutricionista-pietra-fogaca.jpg",
     },
     paragraphs: [
-      "Nutricionista comportamental especializada em ajudar mulheres que descontam suas emoções na comida. Com base em São Paulo e Porto Alegre, já ajudei centenas de mulheres a transformarem definitivamente sua relação com a alimentação.",
-      "Meu método 3C's já eliminou mais de 400kg, mas o mais importante: meus clientes aprendem a nunca mais precisar emagrecer novamente.",
-      "Acredito que a nutrição vai além de calorias e macronutrientes - é sobre entender a relação emocional com a comida e desenvolver hábitos sustentáveis.",
+      "Nutricionista formada na Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental e foco no atendimento de mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem.",
+      "Mais de 100 mulheres já passaram pelo meu acompanhamento e reencontraram o prazer de comer, de se olhar no espelho e de se priorizar.",
+      "Acredito em um processo nutricional baseado em três pilares: Conhecimento, Consciência e Comportamento. Essa é a base do meu método 3C’s, construído com base em ciência, prática clínica e muita escuta.",
     ],
-    ctaText: "Quero agendar uma consulta",
+    ctaText: "QUERO TRANSFORMAR A MINHA RELAÇÃO COM A COMIDA",
   },
 
   // Testimonials
