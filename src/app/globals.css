@@ -3,14 +3,19 @@
 @theme {
   --color-background: #ffffff; /* White */
   --color-foreground: #000000; /* Black */
-  --color-primary: #ec4899; /* Pink/Rose */
-  --color-primary-foreground: #ffffff; /* White */
+
+  --color-primary: #9a4562;
+  --color-primary-foreground: #ffffff;
+
   --color-secondary: #16a34a; /* Green */
   --color-secondary-foreground: #ffffff; /* White */
+
   --color-tertiary: #1f2937; /* Dark Gray/Slate */
   --color-tertiary-foreground: #ffffff; /* White */
-  --color-accent: #fce7f3; /* Light Pink */
-  --color-accent-foreground: #1f2937; /* Dark Gray/Slate */
+
+  --color-accent: #f8efe8;
+  --color-accent-foreground: #556042;
+
   --color-muted: #9ca3af; /* Light Gray */
 }
 
