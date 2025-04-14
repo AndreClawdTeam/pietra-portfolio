@@ -7,7 +7,7 @@ export const siteContent = {
   site: {
     title: "Pietra Fogaça | Nutricionista Comportamental",
     description:
-      "Emagreça de forma definitiva com o método 3C's para mulheres que descontam emoções na comida. +400kg eliminados com resultados que duram.",
+      "Eu te ajudo a emagrecer de forma leve, sem culpa, sem dieta restritiva e sem abrir mão da sua vida social.",
     address: "R. João Cachoeira, 488 - Conj 1009 - Itaim Bibi, São Paulo",
     whatsappNumber: WHATSAPP_NUMBER,
   },
