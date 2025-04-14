@@ -193,14 +193,14 @@ export default function Home() {
             {siteContent.contact.description}
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <WhatsAppCard />
 
             {/* Instagram Card */}
             <InstagramCard />
 
-            <div className="relative col-span-2">
-              <div className="aspect-video rounded-lg overflow-hidden shadow-md relative">
+            <div className="rounded-2xl shadow-lg hidden md:block relative col-span-2">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-md relative">
                 <Image
                   src={siteContent.contact.clinicImage.src}
                   alt={siteContent.contact.clinicImage.alt}
@@ -209,7 +209,7 @@ export default function Home() {
                   className="object-cover object-center blur-xs"
                 />
               </div>
-              <div className="bg-tertiary/50 absolute top-0 left-0 w-full h-full text-center text-tertiary-foreground flex flex-col gap-8 items-center justify-center p-8">
+              <div className="rounded-2xl bg-tertiary/50 absolute top-0 left-0 w-full h-full text-center text-tertiary-foreground flex flex-col gap-8 items-center justify-center p-8">
                 <h2 className="text-2xl font-bold">
                   {siteContent.contact.clinicSection.title}
                 </h2>
@@ -223,6 +223,19 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="rounded-2xl shadow-lg flex md:hidden relative bg-tertiary text-tertiary-foreground flex-col items-center justify-center gap-8 p-8">
+              <h2 className="text-2xl font-bold">
+                {siteContent.contact.clinicSection.title}
+              </h2>
+              {siteContent.contact.addresses.map((address, index) => (
+                <div key={index}>
+                  <p className="font-semibold">{address.city}</p>
+                  <p>{address.label}</p>
+                  <p className="text-tertiary-foreground">{address.address}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
