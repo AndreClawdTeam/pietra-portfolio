@@ -21,7 +21,7 @@ export default function FAQ({ items }: FAQProps) {
 
   return (
     <div className="w-full max-w-3xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+      <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
         {siteContent.faq.title}
       </h2>
 
@@ -29,13 +29,15 @@ export default function FAQ({ items }: FAQProps) {
         {items.map((item, index) => (
           <div
             key={index}
-            className="border border-pink-100 rounded-lg overflow-hidden"
+            className="border border-accent rounded-lg overflow-hidden"
           >
             <button
-              className="w-full flex items-center justify-between p-4 text-left bg-white hover:underline cursor-pointer transition-colors"
+              className="w-full flex items-center justify-between p-4 text-left bg-background hover:underline cursor-pointer transition-colors"
               onClick={() => toggleOpen(index)}
             >
-              <span className="font-medium text-gray-800">{item.question}</span>
+              <span className="font-medium text-foreground">
+                {item.question}
+              </span>
               <span className="ml-4 flex-shrink-0">
                 <svg
                   className={`h-5 w-5 transition-transform duration-300 ${
@@ -61,8 +63,8 @@ export default function FAQ({ items }: FAQProps) {
                   : "max-h-0 opacity-0"
               } overflow-hidden`}
             >
-              <div className="p-4 bg-white">
-                <p className="text-gray-700">{item.answer}</p>
+              <div className="p-4 bg-background">
+                <p className="text-foreground">{item.answer}</p>
               </div>
             </div>
           </div>

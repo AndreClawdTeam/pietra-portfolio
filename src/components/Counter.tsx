@@ -63,11 +63,11 @@ export default function Counter({
 
   return (
     <div ref={counterRef} className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-pink-600 mb-2">
+      <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
         {count}
         {suffix}
       </div>
-      <p className="text-gray-700">{label}</p>
+      <p className="text-foreground">{label}</p>
     </div>
   );
 }

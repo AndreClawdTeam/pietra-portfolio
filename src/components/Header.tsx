@@ -23,8 +23,8 @@ export default function Header() {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white shadow-md py-2"
-          : "bg-white md:bg-transparent py-4"
+          ? "bg-background shadow-md py-2"
+          : "bg-background md:bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-6">
@@ -50,7 +50,7 @@ export default function Header() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden text-gray-800 focus:outline-none"
+              className="md:hidden text-foreground focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg
@@ -148,7 +148,7 @@ function NavLink({
         ${
           isButton
             ? `${ctaButtonColorCn} px-4 py-2 rounded-full`
-            : "text-gray-800 hover:text-pink-500"
+            : "text-foreground hover:text-primary"
         }
       `}
     >

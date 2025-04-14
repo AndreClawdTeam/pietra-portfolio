@@ -3,26 +3,26 @@ import { CtaButton } from "./CtaButton";
 
 export default function MethodSection() {
   return (
-    <section className="py-16 bg-white" id="metodo">
+    <section className="py-16 bg-background" id="metodo">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold mb-4 text-gray-800">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
             {siteContent.method.title}
           </h2>
-          <p className="text-gray-700">{siteContent.method.description}</p>
+          <p className="text-foreground">{siteContent.method.description}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12">
           {siteContent.method.steps.map((step, index) => (
             <div
               key={index}
-              className="relative bg-pink-50 p-8 rounded-lg shadow-sm text-center"
+              className="relative bg-accent p-8 rounded-lg shadow-sm text-center"
             >
               <div className="text-5xl mb-4">{step.icon}</div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">
+              <h3 className="text-xl font-bold mb-4 text-foreground">
                 {step.title}
               </h3>
-              <p className="text-gray-700">{step.description}</p>
+              <p className="text-foreground">{step.description}</p>
 
               {index < siteContent.method.steps.length - 1 && (
                 <div className="hidden md:block absolute -right-6 top-1/2 transform -translate-y-1/2">
@@ -36,7 +36,7 @@ export default function MethodSection() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-pink-400"
+                    className="text-primary"
                   >
                     <path d="M5 12h14m-7-7l7 7-7 7" />
                   </svg>
