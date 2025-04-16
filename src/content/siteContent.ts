@@ -128,19 +128,23 @@ export const siteContent = {
   // Testimonials
   testimonials: [
     {
-      name: "Cliente 1",
-      image: "/images/testimonial1.jpg", // Replace with actual image path
-      text: "O método da Pietra mudou minha vida. Finalmente entendi minha relação com a comida e consegui emagrecer de forma sustentável.",
+      name: "Mariana Pacheco",
+      image:
+        "/testimonials/mariana-cavalcante-de-albuquerque-pacheco-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "Acompanhei a Pietra muito tempo nas redes sociais e especialmente pós-competição. Decidi consultar com ela quando passei a ter episódios de exagero alimentar em razão da ansiedade com o nascimento do meu segundo filho. Diferente de todas as outras nutricionistas que consultei, e não foram poucas, antes mesmo da primeira consulta ela conversou comigo por mais de 1h, para me explicar como ela trabalhava e como se propunha a me acompanhar nos meses seguintes. Me senti acolhida desde o primeiro instante e ali tive certeza de que enfim tinha encontrado a minha última nutricionista! Ela não se preocupa apenas em entregar um plano alimentar, ela ouve a paciente pelo tempo necessário para entender as suas necessidades. Acolhe e orienta sempre que preciso, seja por mensagens, por áudio ou até por vídeo. É aquela profissional que ama o que faz e é perceptível em seus olhos! Estou muito satisfeita e feliz por tê-la comigo durante essa fase e com a certeza que alcançaremos meus objetivos em pouco tempo.",
+      ],
     },
     {
-      name: "Cliente 2",
-      image: "/images/testimonial2.jpg", // Replace with actual image path
-      text: "O método da Pietra mudou minha vida. Finalmente entendi minha relação com a comida e consegui emagrecer de forma sustentável.",
-    },
-    {
-      name: "Cliente 3",
-      image: "/images/testimonial3.jpg", // Replace with actual image path
-      text: "O método da Pietra mudou minha vida. Finalmente entendi minha relação com a comida e consegui emagrecer de forma sustentável.",
+      name: "Vanessa Bassi",
+      image:
+        "/testimonials/vanessa-bassi-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "Acompanho a Pietra desde a época em que ela ainda era estudante, e já naquela época dava pra ver o quanto ela seria uma profissional incrível e dedicada. Me tornei paciente dela em janeiro de 2025 e, desde então, só tenho motivos pra agradecer.",
+        "O atendimento é super personalizado, com aquele cuidado que faz a gente se sentir ouvida e acolhida. Tem acompanhamento toda semana e tudo é pensado de forma leve e real. Consegui perder peso, melhorar minha hidratação e, o mais importante: mudei minha relação com a comida. Nem parece que estou de dieta, de verdade! Como bem, sinto menos fome e me sinto mais conectada com meu corpo.",
+        "Durante esse processo, precisei passar por uma cirurgia, e a Pietra foi essencial. Ela ajustou meu plano alimentar com tanto cuidado que consegui manter meus resultados mesmo em repouso e sem treinar. Me senti segura e muito bem acompanhada.",
+        "A Pietra é aquele tipo de profissional que vai além da nutrição. Ela cuida com carinho, escuta de verdade e torce junto com a gente. Sou muito feliz por ter ela nesse processo – virou mais que nutri, virou parceira de jornada!",
+      ],
     },
   ],
 

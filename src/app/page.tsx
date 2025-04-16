@@ -8,6 +8,16 @@ import { CtaButton } from "@/components/CtaButton";
 import Link from "next/link";
 import { WhatsAppCard } from "@/components/WhatsAppCard";
 import { InstagramCard } from "@/components/InstagramCard";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+
+// Transform the site testimonials to match the TestimonialCarousel component props
+const testimonialData = siteContent.testimonials.map((testimonial) => ({
+  imageUrl: testimonial.image,
+  name: testimonial.name,
+  score: 5, // All testimonials show 5 stars in the current implementation
+  testimonial: testimonial.text,
+}));
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -113,29 +123,17 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Testimonials */}
-            {siteContent.testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-background p-6 rounded-lg shadow-sm"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="h-12 w-12 bg-accent rounded-full mr-4"></div>
-                  <div>
-                    <h4 className="font-bold">{testimonial.name}</h4>
-                    <div className="flex text-primary">
-                      {[...Array(5)].map((_, j) => (
-                        <span key={j}>★</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-foreground">
-                  &quot;{testimonial.text}&quot;
-                </p>
+
+          {/* Testimonials Carousel */}
+          <div className="bg-accent rounded-xl shadow-md overflow-hidden">
+            <div className="px-5 py-8">
+              <h2 className="text-2xl font-bold text-center mb-6 text-foreground">
+                O que as pacientes dizem
+              </h2>
+              <div>
+                <TestimonialCarousel testimonials={testimonialData} />
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
