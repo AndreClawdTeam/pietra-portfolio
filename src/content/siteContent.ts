@@ -146,6 +146,47 @@ export const siteContent = {
         "A Pietra é aquele tipo de profissional que vai além da nutrição. Ela cuida com carinho, escuta de verdade e torce junto com a gente. Sou muito feliz por ter ela nesse processo – virou mais que nutri, virou parceira de jornada!",
       ],
     },
+    {
+      name: "Alana Louise",
+      image:
+        "/testimonials/alana-louise-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "Eu já acompanhava a Pietra nas redes sociais mesmo antes de ela se formar, e sempre tive muita confiança que ela seria uma ótima profissional por sempre compartilhar conteúdos de qualidade e confiáveis.",
+        "Quando decidi consultar uma nutricionista, não pensei duas vezes antes de escolher a Pietra, e foi a melhor escolha que eu fiz! ",
+        "Pedi ajuda pra Nutri em relação a ansiedade com a comida, com histórico de transtornos alimentares, além também de ter necessidades específicas por conta de praticar corrida, e ela me ajudou com tudo isso, montando um plano pensado em todos os quesitos e me dando suporte o tempo todo. Ganhei mais disposição e perdi o medo de comer, além dos resultados estéticos que são só um extra comparado a melhoria de qualidade de vida que eu tive.",
+        "Além de tudo, a Pietra monta a dieta com alimentos que gosto de comer, sem restrições malucas ou suplementos desnecessários, só o básico que funciona e sempre adequado às minhas preferências!",
+        "Recomendo de olhos fechados ❤️",
+      ],
+    },
+    {
+      name: "Mirella Stumpf",
+      image:
+        "/testimonials/mirella-stumpf-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "Estou amando o atendimento da nutri, por ser humanizado, específico e adaptável a minha rotina e minhas necessidades.",
+        "Já fiz dezenas de outras dietas e passei por vários outros profissionais, mas nenhum como ela! Me sinto acolhida e amparada de verdade para enfrentar o processo difícil e complexo que é a mudança de hábitos, a Pi me ajudou a ter um posicionamento diferente não só na alimentação, mas também na mentalidade e emocional.",
+        "Pedi ajuda pra Nutri em relação a ansiedade com a comida, com histórico de transtornos alimentares, além também de ter necessidades específicas por conta de praticar corrida, e ela me ajudou com tudo isso, montando um plano pensado em todos os quesitos e me dando suporte o tempo todo. Ganhei mais disposição e perdi o medo de comer, além dos resultados estéticos que são só um extra comparado a melhoria de qualidade de vida que eu tive.",
+        "Recomendo demais o atendimento dela, sem dúvidas foi um dos melhores investimento que já fiz por mim mesma!",
+      ],
+    },
+    {
+      name: "Letícia Guedes",
+      image:
+        "/testimonials/leticia-guedes-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "Sou completamente fã do trabalho dela. É impressionante como ela consegue transformar algo que já era bom em algo ainda mais especial. E isso só é possível porque ela coloca amor de verdade no que faz — e a gente sente isso em cada palavra, em cada cuidado.",
+        "Em um momento difícil, quando pensei em desistir, ela me acolheu com tanta empatia e sensibilidade que me senti segura pra falar sobre questões delicadas como a compulsão alimentar. Eu me sinto ouvida, acolhida, respeitada, suas palavras e sua abordagem fazem toda a diferença no meu processo. É uma profissional única e eu sou profundamente grata por ter encontrado.",
+      ],
+    },
+    {
+      name: "Clara Angeletti",
+      image:
+        "/testimonials/clara-angeletti-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "Passar com a Pietra foi uma escolha muito acertada. Acompanho seu trabalho desde o início das postagens no Instagram, em 2019, e é muito inspirador ver a profissional que ela se formou.",
+        "Ela tem um atendimento realmente diferente, porque em vez de ser centralizado nas consultas, volta-se para tudo o que acontece entre uma consulta e outra. Seguir a dieta. Ter dúvidas. Ter dificuldades, frustrações, angústias, viagens. Aí tudo muda, porque não adianta ter a dieta se não conseguimos seguir, e o trabalho dela parte dessa premissa. Além disso ela sempre foi muito acolhedora e compreensiva, mas com a firmeza necessária no melhor equilíbrio para eu atingir meus objetivos.",
+      ],
+    },
   ],
 
   // FAQ section
