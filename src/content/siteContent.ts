@@ -187,6 +187,16 @@ export const siteContent = {
         "Ela tem um atendimento realmente diferente, porque em vez de ser centralizado nas consultas, volta-se para tudo o que acontece entre uma consulta e outra. Seguir a dieta. Ter dúvidas. Ter dificuldades, frustrações, angústias, viagens. Aí tudo muda, porque não adianta ter a dieta se não conseguimos seguir, e o trabalho dela parte dessa premissa. Além disso ela sempre foi muito acolhedora e compreensiva, mas com a firmeza necessária no melhor equilíbrio para eu atingir meus objetivos.",
       ],
     },
+    {
+      name: "Filomena Barreto",
+      image:
+        "/testimonials/filomena-barreto-paciente-da-nutricionista-pietra-fogaca.png",
+      text: [
+        "Falar da nutricionista Pietra, é falar de uma grande amiga, que se preocupa com o bem-estar de suas pacientes, como um dos seu familiares 🥰🥰 Gente! Conheci a nutri Pietra através do Instagram, e com a insistência da minha filha fomos fazer uma consulta online, e na conversa com a nutricionista Pietra, gostei de cara, a Pi é muito querida, uma pessoa maravilhosa e compreensível, e uma profissional incrível! Daí fomos pra uma consulta presencial,  e amei o plano alimentar dela. A consulta durou mais de uma hora, ela com toda sua dedicação passou seu plano alimentar, e planejamos juntas o minha dieta. Com mudanças simples e sem passar fome, estou conseguindo perder peso! Tudo bem planejado, e conforme o meu gosto.",
+        "Super recomendo essa nutricionista Pietra Fogaça pra quem quer perder peso e sem sofrimento, pois o plano alimentar dela é tudo conforme o gosto de cada paciente.",
+        "Sou Filomena Barreto, e comecei meu tratamento em fevereiro. Sigo firme com o meu coração leve e conseguindo perder peso.",
+      ],
+    },
   ],
 
   // FAQ section
