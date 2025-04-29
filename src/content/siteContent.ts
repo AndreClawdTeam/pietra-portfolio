@@ -197,6 +197,15 @@ export const siteContent = {
         "Sou Filomena Barreto, e comecei meu tratamento em fevereiro. Sigo firme com o meu coração leve e conseguindo perder peso.",
       ],
     },
+    {
+      name: "Laíse Matros",
+      image:
+        "/testimonials/laise-matros-paciente-da-nutricionista-pietra-fogaca.jpeg",
+      text: [
+        "O acompanhamento da Pietra é de longe um dos melhores que eu já tive. O cuidado em adaptar o plano para a minha realidade, sem impor nenhum tipo de alimento ou de refeição faz TOTAL diferença na adesão. A empatia e acolhimento permite que eu me abra sem medo de julgamento.",
+        "Ela vibra a cada conquista com a mesma intensidade, fazendo com que me sinta capaz e motivada a continuar. Consegue mostrar que a “falha” faz parte do caminho e que o mais importante é a constância. Mas vejam, isso todo mundo fala, mas a Pietra tem uma mágica que faz o paciente realmente incorporar e vivenciar nisso. Só tenho a agradecer por me ajudar a ter uma boa relação com a comida de novo!",
+      ]
+    }
   ],
 
   // FAQ section
