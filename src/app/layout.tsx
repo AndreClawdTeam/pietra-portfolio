@@ -81,6 +81,10 @@ export default function RootLayout({
           name="facebook-domain-verification"
           content={process.env.FACEBOOK_DOMAIN_VERIFICATION_ID}
         />
+        <meta
+          name="google-site-verification"
+          content="v6K_ixaR7TNmhhiWdcljgnmO4QANyg4mjFFLt088G9I"
+        />
       </head>
       <body className={`${poppins.variable} font-sans font-light`}>
         {children}
