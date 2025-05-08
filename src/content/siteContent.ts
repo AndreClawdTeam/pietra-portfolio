@@ -1,6 +1,6 @@
 const WHATSAPP_NUMBER = "5511991538151";
 const INSTAGRAM_URL = "https://instagram.com/nutricionistapietra";
-const EMAIL = "agendamentosnutripietra@hotmail.com";
+const EMAIL = "agendamento@nutricionistapietra.com.br";
 
 export const siteContent = {
   // General site info
