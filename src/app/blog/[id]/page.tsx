@@ -32,7 +32,7 @@ export async function generateMetadata(
   const previousKeywords = (await parent).keywords || [];
   return {
     title: post.title,
-    description: `Clique aqui para ler mais sobre ${post.title}...`,
+    description: post.description,
     keywords: [post.title, ...previousKeywords],
     openGraph: {
       images: [post.thumbnail],
