@@ -7,6 +7,7 @@ import Image from "next/image";
 import { SanityBlogPost } from "../types";
 
 // lazy-loaded image component
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ImageComponent = ({ value, isInline }: any) => {
   const { width, height } = getImageDimensions(value);
   return (

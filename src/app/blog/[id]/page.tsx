@@ -6,13 +6,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { RenderBodyContent } from "@/sanity/components/render-body-content";
-import { BLOG_REVALIDATE_TIME } from "@/lib/constants";
 
 type PageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-export const revalidate = BLOG_REVALIDATE_TIME;
+export const revalidate = 1;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -26,7 +25,8 @@ export async function generateMetadata(
   { params }: PageProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const post = await getArticleById(params.id);
+  const { id } = await params;
+  const post = await getArticleById(id);
   if (!post) return redirect("/not-found");
   const previousKeywords = (await parent).keywords || [];
   return {
@@ -40,7 +40,8 @@ export async function generateMetadata(
 }
 
 export default async function Page({ params }: PageProps) {
-  const post = await getArticleById(params.id);
+  const { id } = await params;
+  const post = await getArticleById(id);
   if (!post) return redirect("/blog");
 
   return (
