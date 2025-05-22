@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 export default async function Layout({ children }: React.PropsWithChildren) {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <Header />
+      <Header isBlogLayout={true} />
 
       {/* Main content */}
       <main className="bg-accent flex-1 pt-24 pb-12">{children}</main>

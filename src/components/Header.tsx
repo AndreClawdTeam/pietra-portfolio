@@ -6,7 +6,11 @@ import Image from "next/image";
 import siteContent from "@/content/siteContent";
 import { CtaButton, ctaButtonColorCn } from "./CtaButton";
 
-export default function Header() {
+type HeaderProps = {
+  isBlogLayout?: boolean;
+};
+
+export default function Header({ isBlogLayout = false }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -82,7 +86,10 @@ export default function Header() {
           {/* Desktop menu */}
           <nav className="hidden md:flex space-x-8 items-center">
             {siteContent.navigation.links.map((link, index) => (
-              <NavLink key={index} href={link.href}>
+              <NavLink
+                key={index}
+                href={`${isBlogLayout ? "/" : ""}${link.href}`}
+              >
                 {link.label}
               </NavLink>
             ))}
@@ -102,7 +109,7 @@ export default function Header() {
             {siteContent.navigation.links.map((link, index) => (
               <NavLink
                 key={index}
-                href={link.href}
+                href={`${isBlogLayout ? "/" : ""}${link.href}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
