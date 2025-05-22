@@ -13,7 +13,8 @@ export default async function Page() {
         <div className="container mx-auto">
           <h1 className="text-2xl font-bold text-foreground">Blog</h1>
           <p className="text-muted-foreground mt-2">
-            Artigos e dicas sobre nutrição comportamental
+            Textos e dicas sobre nutrição, emagrecimento e comportamento
+            alimentar.
           </p>
         </div>
       </div>
