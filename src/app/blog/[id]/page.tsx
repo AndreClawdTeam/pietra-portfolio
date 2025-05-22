@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { RenderBodyContent } from "@/sanity/components/render-body-content";
+import { ArrowLeft } from "lucide-react";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -45,58 +46,74 @@ export default async function Page({ params }: PageProps) {
   if (!post) return redirect("/blog");
 
   return (
-    <div className="bg-background text-foreground px-4 md:px-6 space-y-6 md:space-y-12 lg:space-y-16">
-      <nav>
-        <Link
-          className="text-muted-foreground hover:text-foreground transition-colors hover:underline underline-offset-4"
-          href="/blog"
-        >
-          Voltar para o blog
-        </Link>
-      </nav>
-      <header className="space-y-3">
-        <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-[3.5rem]">
-          {post.title}
-        </h1>
-        <div className="flex items-center gap-2">
-          <Avatar>
-            <AvatarImage src={post.author.avatar} />
-            <AvatarFallback>
-              {post.author.name.slice(0, 2).toUpperCase()}
-            </AvatarFallback>
-          </Avatar>
-          <span>{post.author.name}</span>
+    <article className="container mx-auto px-4 md:px-6">
+      {/* Back Navigation */}
+      <Link
+        href="/blog"
+        className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        <span>Voltar para o blog</span>
+      </Link>
+
+      {/* Article Header */}
+      <div className="max-w-3xl mx-auto">
+        <header className="space-y-6 mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+            {post.title}
+          </h1>
+
+          <div className="flex items-center gap-4 text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Avatar className="h-8 w-8">
+                <AvatarImage src={post.author.avatar} alt={post.author.name} />
+                <AvatarFallback>
+                  {post.author.name.slice(0, 2).toUpperCase()}
+                </AvatarFallback>
+              </Avatar>
+              <span>{post.author.name}</span>
+            </div>
+            <span>·</span>
+            <time dateTime={post.date.toISOString()} className="text-sm">
+              {formatDate(post.date)}
+            </time>
+          </div>
+        </header>
+
+        {/* Featured Image */}
+        <div className="relative aspect-[16/9] mb-12 rounded-lg overflow-hidden">
+          <Image
+            src={post.thumbnail}
+            alt={post.title}
+            fill
+            priority
+            className="object-cover"
+          />
         </div>
-        <p className="text-muted-foreground">
-          Publicado em {formatDate(post.date)}
-        </p>
-      </header>
-      <aside className="w-full lg:w-1/2 aspect-auto">
-        <Image
-          src={post.thumbnail}
-          alt={post.title}
-          width={1024}
-          height={1024}
-          className="object-cover object-center w-full h-full"
-        />
-      </aside>
-      <main className="blog-post">
-        <RenderBodyContent content={post.content} />
-      </main>
-      <footer className="flex items-center justify-between bg-muted p-8 text-muted-foreground">
-        <div>
-          <p>Publicado em {formatDate(post.date)}</p>
+
+        {/* Article Content */}
+        <div className="blog-post prose prose-lg prose-neutral dark:prose-invert max-w-none">
+          <RenderBodyContent content={post.content} />
         </div>
-        <div className="flex items-center gap-2">
-          <span>{post.author.name}</span>
-          <Avatar>
-            <AvatarImage src={post.author.avatar} />
-            <AvatarFallback>
-              {post.author.name.slice(0, 2).toUpperCase()}
-            </AvatarFallback>
-          </Avatar>
-        </div>
-      </footer>
-    </div>
+
+        {/* Article Footer */}
+        <footer className="mt-12 pt-6 border-t">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+            <time dateTime={post.date.toISOString()}>
+              Publicado em {formatDate(post.date)}
+            </time>
+            <div className="flex items-center gap-2">
+              <span>{post.author.name}</span>
+              <Avatar className="h-8 w-8">
+                <AvatarImage src={post.author.avatar} alt={post.author.name} />
+                <AvatarFallback>
+                  {post.author.name.slice(0, 2).toUpperCase()}
+                </AvatarFallback>
+              </Avatar>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </article>
   );
 }
