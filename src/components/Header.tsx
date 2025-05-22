@@ -14,6 +14,10 @@ export default function Header({ isBlogLayout = false }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const links = isBlogLayout
+    ? siteContent.navigation.links.filter((link) => link.href !== "/blog")
+    : siteContent.navigation.links;
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -85,7 +89,7 @@ export default function Header({ isBlogLayout = false }: HeaderProps) {
 
           {/* Desktop menu */}
           <nav className="hidden md:flex space-x-8 items-center">
-            {siteContent.navigation.links.map((link, index) => (
+            {links.map((link, index) => (
               <NavLink
                 key={index}
                 href={`${isBlogLayout ? "/" : ""}${link.href}`}
@@ -106,7 +110,7 @@ export default function Header({ isBlogLayout = false }: HeaderProps) {
           }`}
         >
           <nav className="flex flex-col space-y-4 py-4">
-            {siteContent.navigation.links.map((link, index) => (
+            {links.map((link, index) => (
               <NavLink
                 key={index}
                 href={`${isBlogLayout ? "/" : ""}${link.href}`}

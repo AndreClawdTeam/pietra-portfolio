@@ -20,6 +20,7 @@ export const siteContent = {
       { label: "Método", href: "#metodo" },
       { label: "FAQ", href: "#faq" },
       { label: "Contato", href: "#contato" },
+      { label: "Blog", href: "/blog" },
     ],
     cta: {
       label: "AGENDAR CONSULTA",
