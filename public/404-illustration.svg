@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Hearts -->
+    <path d="M60,100 C60,85 70,75 80,75 C90,75 95,85 95,90 C95,85 100,75 110,75 C120,75 130,85 130,100 C130,120 95,135 95,135 C95,135 60,120 60,100Z" 
+          fill="#F472B6" stroke="#DB2777" stroke-width="2"/>
+    
+    <path d="M150,100 C150,85 160,75 170,75 C180,75 185,85 185,90 C185,85 190,75 200,75 C210,75 220,85 220,100 C220,120 185,135 185,135 C185,135 150,120 150,100Z" 
+          fill="#F472B6" stroke="#DB2777" stroke-width="2" transform="scale(0.7) translate(100, 70)"/>
+    
+    <!-- Flowers -->
+    <g transform="translate(50, 180) scale(0.6)">
+        <!-- Petals -->
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(0)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(72)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(144)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(216)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(288)"/>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="5" fill="#BE185D"/>
+    </g>
+    
+    <g transform="translate(190, 180) scale(0.6)">
+        <!-- Petals -->
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(0)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(72)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(144)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(216)"/>
+        <path d="M0,0 C5,-10 15,-10 20,0 C15,10 5,10 0,0Z" fill="#F9A8D4" transform="rotate(288)"/>
+        <!-- Center -->
+        <circle cx="0" cy="0" r="5" fill="#BE185D"/>
+    </g>
+    
+    <!-- Small decorative dots -->
+    <circle cx="80" cy="70" r="3" fill="#F472B6"/>
+    <circle cx="160" cy="70" r="3" fill="#F472B6"/>
+    <circle cx="120" cy="200" r="3" fill="#F472B6"/>
+
+</svg> 
