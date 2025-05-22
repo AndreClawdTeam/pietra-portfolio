@@ -1,5 +1,5 @@
 import { getAllArticles, getArticleById } from "@/services/articles";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/Avatar";
 import { formatDate } from "@/lib/utils";
 import Link from "next/link";
@@ -43,7 +43,7 @@ export async function generateMetadata(
 export default async function Page({ params }: PageProps) {
   const { id } = await params;
   const post = await getArticleById(id);
-  if (!post) return redirect("/blog");
+  if (!post) return notFound();
 
   return (
     <article className="container mx-auto px-4 md:px-6">
