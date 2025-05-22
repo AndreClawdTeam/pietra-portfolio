@@ -13,6 +13,7 @@ const postData = `{
   },
   mainImage,
   publishedAt,
+  description,
   body
 }`;
 

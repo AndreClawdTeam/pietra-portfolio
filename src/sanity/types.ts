@@ -16,6 +16,7 @@ export type SanityBlogPost = {
   _id: number;
   title: string;
   slug: any;
+  description: string;
   metadata: string;
   body: PortableTextBlock[];
   mainImage: any;

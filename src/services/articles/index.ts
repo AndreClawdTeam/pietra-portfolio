@@ -12,6 +12,7 @@ function mapSanityToDomain(post: SanityBlogPost): Article {
     id: post.slug.current,
     title: post.title,
     content: post.body,
+    description: post.description,
     thumbnail: imageBuilder(post.mainImage).url(),
     author: {
       name: post.author.name,

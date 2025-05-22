@@ -4,28 +4,34 @@ import Image from "next/image";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/Avatar";
 import { formatDate } from "@/lib/utils";
 
-function ArticleCard({ article }: { article: Article }) {
+interface ArticleCardProps {
+  article: Article;
+}
+
+function ArticleCard({ article }: ArticleCardProps) {
   return (
     <Link
       href={`/blog/${article.id}`}
-      className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-4 md:gap-6 group"
+      className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-6 group"
       prefetch={false}
     >
-      <div className="aspect-video overflow-hidden rounded-lg">
+      <div className="relative aspect-[4/3] md:aspect-[4/3] overflow-hidden rounded-lg">
         <Image
           src={article.thumbnail}
-          width={480}
-          height={320}
+          fill
           alt={article.title}
-          className="object-cover object-center aspect-square"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className="space-y-2">
-        <h2 className="text-xl font-bold tracking-tight group-hover:underline">
-          {article.title}
-        </h2>
-        <div className="flex items-center gap-2 text-muted-foreground">
-          <Avatar className="w-8 h-8 border">
+      <div className="flex flex-col justify-between py-1">
+        <div>
+          <h2 className="text-xl font-semibold group-hover:text-primary transition-colors">
+            {article.title}
+          </h2>
+          <p className="mt-2 text-muted-foreground">{article.description}</p>
+        </div>
+        <div className="flex items-center gap-3 text-muted-foreground mt-4">
+          <Avatar className="w-6 h-6 border">
             <AvatarImage
               src={article.author.avatar}
               alt={article.author.name}
@@ -34,9 +40,13 @@ function ArticleCard({ article }: { article: Article }) {
               {article.author.name.slice(0, 2).toUpperCase()}
             </AvatarFallback>
           </Avatar>
-          <span>{article.author.name}</span>
-          <span>·</span>
-          <span>{formatDate(article.date)}</span>
+          <div className="flex items-center gap-2 text-sm">
+            <span>{article.author.name}</span>
+            <span>·</span>
+            <time dateTime={article.date.toISOString()} className="text-sm">
+              {formatDate(article.date)}
+            </time>
+          </div>
         </div>
       </div>
     </Link>

@@ -4,6 +4,7 @@ const articleSchema = z.object({
   id: z.string(),
   title: z.string(),
   content: z.any(),
+  description: z.string(),
   thumbnail: z.string(),
   author: z.object({
     name: z.string(),
