@@ -8,7 +8,6 @@ declare global {
 
 export function reportConversion() {
   if (typeof window !== "undefined" && window.gtag !== undefined) {
-    alert(1);
     window.gtag("event", "conversion", {
       send_to: "AW-17059362533/MeOQCLPbidIaEOXtxMY_",
     });
