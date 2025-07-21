@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: `Blog | ${siteContent.site.title}`,
+  title: `Ebooks | ${siteContent.site.title}`,
   description: siteContent.site.description,
   applicationName: "Nutricionista Pietra Fogaça",
   metadataBase: new URL("https://www.nutricionistapietra.com.br"),
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
 export default async function Layout({ children }: React.PropsWithChildren) {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <Header isBlogLayout={true} />
+      <Header isEbookLayout={true} />
 
       {/* Main content */}
       <main className="bg-accent flex-1 pt-24 pb-12">{children}</main>

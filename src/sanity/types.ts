@@ -24,3 +24,17 @@ export type SanityBlogPost = {
   tags: string[];
   publishedAt: string;
 };
+
+export type SanityEbookPost = {
+  _id: number;
+  title: string;
+  slug: any;
+  description: string;
+  metadata: string;
+  link: string;
+  body: PortableTextBlock[];
+  mainImage: any;
+  author: SanityAuthor;
+  tags: string[];
+  publishedAt: string;
+};
