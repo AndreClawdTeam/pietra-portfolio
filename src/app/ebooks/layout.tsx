@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: `Ebooks | ${siteContent.site.title}`,
+  title: `Ebooks e Cursos | ${siteContent.site.title}`,
   description: siteContent.site.description,
   applicationName: "Nutricionista Pietra Fogaça",
   metadataBase: new URL("https://www.nutricionistapietra.com.br"),

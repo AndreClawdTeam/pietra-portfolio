@@ -11,14 +11,16 @@ interface EbookCardProps {
 function EbookCard({ ebook }: EbookCardProps) {
   return (
     <div className="grid grid-cols-1 group bg-white p-4 rounded-xl">
-      <div className="relative overflow-hidden rounded-lg w-full aspect-square">
-        <Image
-          src={ebook.thumbnail}
-          fill
-          alt={ebook.title}
-          className="object-contain"
-        />
-      </div>
+      {ebook.thumbnailImage ? (
+        <div className="relative overflow-hidden rounded-lg w-full aspect-square">
+          <Image
+            src={ebook.thumbnailImage}
+            fill
+            alt={ebook.title}
+            className="object-contain"
+          />
+        </div>
+      ) : null}
       <div className="flex flex-col justify-between py-1">
         <div className="text-center">
           <h2 className="text-xl font-semibold text-primary mt-4 md:h-[75px] md:leading-6 flex items-center justify-center md:px-4">

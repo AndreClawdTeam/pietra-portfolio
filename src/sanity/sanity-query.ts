@@ -41,7 +41,8 @@ const ebookData = `{
     image,
     bio
   },
-  mainImage,
+  thumbnailImage,
+  previewImage,
   publishedAt,
   body,
   link

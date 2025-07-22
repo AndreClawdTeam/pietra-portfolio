@@ -33,7 +33,8 @@ export type SanityEbookPost = {
   metadata: string;
   link: string;
   body: PortableTextBlock[];
-  mainImage: any;
+  thumbnailImage: any;
+  previewImage: any;
   author: SanityAuthor;
   tags: string[];
   publishedAt: string;

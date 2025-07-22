@@ -14,7 +14,12 @@ function mapSanityToDomain(post: SanityEbookPost): Ebook {
     content: post.body,
     description: post.description,
     link: post.link,
-    thumbnail: imageBuilder(post.mainImage).url(),
+    thumbnailImage: post.thumbnailImage
+      ? imageBuilder(post.thumbnailImage).url()
+      : undefined,
+    previewImage: post.previewImage
+      ? imageBuilder(post.previewImage).url()
+      : undefined,
     author: {
       name: post.author.name,
       avatar: imageBuilder(post.author.image).url(),

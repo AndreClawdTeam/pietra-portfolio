@@ -6,7 +6,8 @@ const ebookSchema = z.object({
   content: z.any(),
   description: z.string(),
   link: z.string(),
-  thumbnail: z.string(),
+  thumbnailImage: z.string().optional(),
+  previewImage: z.string().optional(),
   author: z.object({
     name: z.string(),
     avatar: z.string(),

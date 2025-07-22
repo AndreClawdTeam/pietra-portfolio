@@ -32,7 +32,23 @@ export const ebookType = defineType({
       to: { type: "author" },
     }),
     defineField({
-      name: "mainImage",
+      name: "thumbnailImage",
+      title: "Imagem de miniatura (lista)",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: "alt",
+          type: "string",
+          title: "Alternative text",
+        },
+      ],
+    }),
+    defineField({
+      name: "previewImage",
+      title: "Imagem principal (visão detalhada)",
       type: "image",
       options: {
         hotspot: true,

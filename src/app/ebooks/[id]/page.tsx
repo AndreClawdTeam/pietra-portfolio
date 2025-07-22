@@ -31,13 +31,23 @@ export async function generateMetadata(
   const ebook = await getEbookById(id);
   if (!ebook) return redirect("/not-found");
   const previousKeywords = (await parent).keywords || [];
+
+  if (ebook.previewImage || ebook.thumbnailImage) {
+    return {
+      title: ebook.title,
+      description: ebook.description,
+      keywords: [ebook.title, ...previousKeywords],
+      openGraph: {
+        images: [ebook.previewImage! ?? ebook.thumbnailImage!],
+      },
+    };
+  }
+
   return {
     title: ebook.title,
     description: ebook.description,
     keywords: [ebook.title, ...previousKeywords],
-    openGraph: {
-      images: [ebook.thumbnail],
-    },
+    openGraph: null,
   };
 }
 
@@ -54,7 +64,7 @@ export default async function Page({ params }: PageProps) {
         className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
       >
         <ArrowLeft className="h-4 w-4" />
-        <span>Voltar para a lista de ebooks</span>
+        <span>Voltar para a lista de ebooks e cursos</span>
       </Link>
 
       {/* Article Header */}
@@ -77,23 +87,21 @@ export default async function Page({ params }: PageProps) {
               </Avatar>
               <span>{ebook.author.name}</span>
             </div>
-            <span>·</span>
-            <time dateTime={ebook.date.toISOString()} className="text-sm">
-              {formatDate(ebook.date)}
-            </time>
           </div>
         </header>
 
         {/* Featured Image */}
-        <div className="relative aspect-[16/9] mb-12 rounded-lg overflow-hidden ">
-          <Image
-            src={ebook.thumbnail}
-            alt={ebook.title}
-            fill
-            priority
-            className="object-contain"
-          />
-        </div>
+        {ebook.previewImage || ebook.thumbnailImage ? (
+          <div className="relative aspect-[16/9] mb-12 rounded-lg overflow-hidden ">
+            <Image
+              src={(ebook.previewImage ?? ebook.thumbnailImage)!}
+              alt={ebook.title}
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+        ) : null}
 
         {/* Article Content */}
         <div className="blog-post prose prose-lg prose-neutral dark:prose-invert max-w-none">
