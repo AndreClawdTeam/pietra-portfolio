@@ -21,7 +21,7 @@ export const siteContent = {
       { label: "FAQ", href: "#faq" },
       { label: "Contato", href: "#contato" },
       { label: "Blog", href: "/blog" },
-      { label: "Ebooks", href: "/ebooks" },
+      { label: "Ebooks e Cursos", href: "/ebooks" },
     ],
     cta: {
       label: "AGENDAR CONSULTA",
