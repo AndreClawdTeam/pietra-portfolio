@@ -5,4 +5,16 @@
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://nutricionistapietra.com.br/ebooks</loc>
+    <lastmod>2025-07-21T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://nutricionistapietra.com.br/blog</loc>
+    <lastmod>2025-07-21T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
 </urlset>

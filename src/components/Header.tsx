@@ -8,15 +8,17 @@ import { CtaButton, ctaButtonColorCn } from "./CtaButton";
 
 type HeaderProps = {
   isBlogLayout?: boolean;
+  isEbookLayout?: boolean;
 };
 
-export default function Header({ isBlogLayout = false }: HeaderProps) {
+export default function Header({
+  isBlogLayout = false,
+  isEbookLayout = false,
+}: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const links = isBlogLayout
-    ? siteContent.navigation.links.filter((link) => link.href !== "/blog")
-    : siteContent.navigation.links;
+  const links = siteContent.navigation.links;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,7 +94,11 @@ export default function Header({ isBlogLayout = false }: HeaderProps) {
             {links.map((link, index) => (
               <NavLink
                 key={index}
-                href={`${isBlogLayout ? "/" : ""}${link.href}`}
+                href={
+                  link.href.includes("#") && (isBlogLayout || isEbookLayout)
+                    ? `/${link.href}`
+                    : `${link.href}`
+                }
               >
                 {link.label}
               </NavLink>
@@ -106,14 +112,18 @@ export default function Header({ isBlogLayout = false }: HeaderProps) {
         {/* Mobile menu */}
         <div
           className={`md:hidden transition-all duration-300 overflow-hidden ${
-            isMenuOpen ? "max-h-60 mt-4" : "max-h-0"
+            isMenuOpen ? "max-h-70 mt-4" : "max-h-0"
           }`}
         >
           <nav className="flex flex-col space-y-4 py-4">
             {links.map((link, index) => (
               <NavLink
                 key={index}
-                href={`${isBlogLayout ? "/" : ""}${link.href}`}
+                href={
+                  link.href.includes("#") && (isBlogLayout || isEbookLayout)
+                    ? `/${link.href}`
+                    : `${link.href}`
+                }
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
