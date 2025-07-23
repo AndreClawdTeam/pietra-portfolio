@@ -92,13 +92,15 @@ export default async function Page({ params }: PageProps) {
 
         {/* Featured Image */}
         {ebook.previewImage || ebook.thumbnailImage ? (
-          <div className="relative aspect-[16/9] mb-12 rounded-lg overflow-hidden ">
+          <div className="relative mb-12 rounded-lg">
+            &nbsp;
             <Image
               src={(ebook.previewImage ?? ebook.thumbnailImage)!}
               alt={ebook.title}
-              fill
               priority
-              className="object-cover"
+              width={800}
+              height={500}
+              className="w-full h-auto"
             />
           </div>
         ) : null}
