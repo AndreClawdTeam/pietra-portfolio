@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { RenderBodyContent } from "@/sanity/components/render-body-content";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ShieldCheck } from "lucide-react";
 import { ExternalLink } from "@/components/ExternalLink";
 
 type PageProps = {
@@ -112,6 +112,10 @@ export default async function Page({ params }: PageProps) {
 
         <div className="mt-12">
           <ExternalLink content="EU QUERO!" link={ebook.link} />
+          <p className="flex items-center gap-2 text-sm text-muted-foreground mt-3">
+            <ShieldCheck className="h-4 w-4 text-green-500 shrink-0" />
+            O pagamento é processado de forma segura pela plataforma Kiwify.
+          </p>
         </div>
 
         {/* Article Footer */}

@@ -67,14 +67,61 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-muted pt-8 text-center text-sm text-muted">
-          <Link
-            href="/studio"
-            className="text-muted hover:text-tertiary-foreground underline!"
-          >
-            {siteContent.footer.name}
-          </Link>{" "}
-          © {new Date().getFullYear()} {siteContent.footer.copyright}
+        <div className="mt-8 border-t border-muted pt-8 text-sm text-muted">
+          <div className="mb-4">
+            <p className="font-medium text-tertiary-foreground mb-1">
+              Informações Legais
+            </p>
+            <p>PIETRA LOUIS FOGACA SCHUMACHER LTDA</p>
+            <p>CNPJ: 52.063.769/0001-52</p>
+            <p>
+              E-mail:{" "}
+              <Link
+                href="mailto:agendamento@nutricionistapietra.com.br"
+                className="text-muted hover:text-tertiary-foreground underline!"
+              >
+                agendamento@nutricionistapietra.com.br
+              </Link>
+            </p>
+            <p>
+              WhatsApp:{" "}
+              <Link
+                href="https://wa.me/5511991538151"
+                className="text-muted hover:text-tertiary-foreground underline!"
+              >
+                (11) 99153-8151
+              </Link>
+            </p>
+            <p>
+              João Cachoeira, 488 - Conjunto 1009, Itaim Bibi, São Paulo - SP
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
+            <p>
+              <Link
+                href="/studio"
+                className="text-muted hover:text-tertiary-foreground underline!"
+              >
+                {siteContent.footer.name}
+              </Link>{" "}
+              © {new Date().getFullYear()} {siteContent.footer.copyright}
+            </p>
+            <div className="flex gap-4">
+              <Link
+                href="/politica-de-privacidade"
+                className="text-muted hover:text-tertiary-foreground underline!"
+              >
+                Política de Privacidade
+              </Link>
+              <Link
+                href="/termos-de-uso"
+                className="text-muted hover:text-tertiary-foreground underline!"
+              >
+                Termos de Uso
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
