@@ -120,9 +120,7 @@ export default function PoliticaDePrivacidade() {
           </div>
 
           <div>
-            <h3 className="font-medium mb-1">
-              Google Analytics (ID: G-JHGW1PWY5H)
-            </h3>
+            <h3 className="font-medium mb-1">Google Analytics</h3>
             <p className="text-sm">
               O Google Analytics é um serviço de análise da Google LLC que nos
               ajuda a entender como os visitantes interagem com o site — quais
@@ -142,9 +140,7 @@ export default function PoliticaDePrivacidade() {
           </div>
 
           <div>
-            <h3 className="font-medium mb-1">
-              Google Ads (ID: AW-17059362533)
-            </h3>
+            <h3 className="font-medium mb-1">Google Ads</h3>
             <p className="text-sm">
               O Google Ads nos permite veicular anúncios na rede de pesquisa e
               display do Google e medir quais anúncios levam a ações no site
@@ -154,9 +150,7 @@ export default function PoliticaDePrivacidade() {
           </div>
 
           <div>
-            <h3 className="font-medium mb-1">
-              Google Tag Manager (ID: GTM-MRGMLF5R)
-            </h3>
+            <h3 className="font-medium mb-1">Google Tag Manager</h3>
             <p className="text-sm">
               O Google Tag Manager é uma ferramenta de gerenciamento de tags que
               nos permite implementar e gerenciar de forma centralizada os
