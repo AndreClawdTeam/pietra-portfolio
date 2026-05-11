@@ -4,7 +4,7 @@ import { reportConversion } from "@/lib/gtag";
 import Link from "next/link";
 
 const variants = {
-  primary: `bg-gradient-to-br from-emerald-700 to-emerald-900 text-white font-medium hover:from-emerald-800 hover:to-emerald-950 shadow-md shadow-emerald-900/20 transition duration-300 py-3 px-8 rounded-full`,
+  primary: `bg-gradient-to-br from-tertiary-light to-tertiary text-tertiary-foreground font-medium hover:from-tertiary-mid hover:to-tertiary shadow-md shadow-tertiary/30 transition duration-300 py-3 px-8 rounded-full`,
   ghost:
     "text-gray-800 font-medium hover:text-primary transition duration-300 py-3 hover:underline",
 };
