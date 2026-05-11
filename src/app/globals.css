@@ -10,8 +10,11 @@
   --color-secondary: #16a34a; /* Green */
   --color-secondary-foreground: #ffffff; /* White */
 
-  --color-tertiary: #1f2937; /* Dark Gray/Slate */
+  --color-tertiary-light: #065f46; /* Emerald 800 — gradient start */
+  --color-tertiary-mid: #064e3b; /* Emerald 900 — hover gradient start */
+  --color-tertiary: #022c22; /* Emerald 950 — base velvet */
   --color-tertiary-foreground: #ffffff; /* White */
+  --color-tertiary-deep: #011a14; /* Near-black velvet — footer anchor */
 
   --color-accent: #f8efe8;
   --color-accent-foreground: #556042;
