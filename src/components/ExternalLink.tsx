@@ -17,7 +17,7 @@ export function ExternalLink(props: {
   return (
     <a
       href={props.link}
-      className={`${props.className} ${variants[props.variant || "primary"]} inline-block`}
+      className={`${props.className} ${variants[props.variant || "primary"]} inline-block text-center`}
       target="_blank"
       rel="noopener noreferrer"
       onClick={reportConversion}
