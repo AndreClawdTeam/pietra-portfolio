@@ -115,7 +115,7 @@ export const siteContent = {
   // About Pietra section
   aboutPietra: {
     title: "Sobre Pietra Fogaça",
-    crn: "20888D",
+    crn: "94003",
     image: {
       alt: "Pietra Fogaça Nutricionista com Jaleco",
       src: "/assets/sobre-a-nutricionista-pietra-fogaca.jpg",
