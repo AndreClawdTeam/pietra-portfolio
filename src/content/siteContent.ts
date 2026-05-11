@@ -121,9 +121,9 @@ export const siteContent = {
       src: "/assets/sobre-a-nutricionista-pietra-fogaca.jpg",
     },
     paragraphs: [
-      "Nutricionista formada na Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental e foco no atendimento de mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem.",
-      "Mais de 100 mulheres já passaram pelo meu acompanhamento e reencontraram o prazer de comer, de se olhar no espelho e de se priorizar.",
-      "Acredito em um processo nutricional baseado em três pilares: Conhecimento, Consciência e Comportamento. Essa é a base do meu método 3C’s, construído com base em ciência, prática clínica e muita escuta.",
+      "Nutricionista formada pela Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental. Atendo mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem — e tenho olhar especial para quem está em tratamento com Mounjaro (tirzepatida) e busca um acompanhamento clínico sério para potencializar resultados, preservar massa magra e construir hábitos que sustentem o emagrecimento muito além da medicação.",
+      "Já são mais de 100 mulheres acompanhadas — algumas reencontrando o prazer de comer depois de anos brigadas com a comida, outras finalmente conseguindo emagrecer com saúde durante o uso de análogos de GLP-1. Em comum, todas voltaram a se olhar no espelho com mais carinho e a se priorizar.",
+      "Meu trabalho é baseado em três pilares: Conhecimento, Consciência e Comportamento — a essência do meu método 3C’s, construído com ciência, prática clínica e muita escuta. Porque emagrecer de forma sustentável não é sobre cortar, é sobre entender.",
     ],
     ctaText: "QUERO TRANSFORMAR A MINHA RELAÇÃO COM A COMIDA",
   },
