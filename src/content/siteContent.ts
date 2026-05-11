@@ -273,7 +273,7 @@ export const siteContent = {
       {
         question: "Você atende online também?",
         answer:
-          "Sim! Atendo tanto presencialmente em São Paulo e Porto Alegre, quanto online para clientes de todo o Brasil. A abordagem é igualmente eficaz em ambos os formatos.",
+          "Sim! Atendo presencialmente em São Paulo e online para clientes de todo o Brasil. A abordagem é igualmente eficaz em ambos os formatos.",
       },
       {
         question: "Preciso seguir uma dieta restritiva?",
@@ -309,12 +309,6 @@ export const siteContent = {
         label: "Núcleo Haya",
         address:
           "João Cachoeira, 488 - conjunto 1009 - Itaim Bibi, São Paulo - SP",
-      },
-      {
-        city: "Porto Alegre",
-        label: "Wall Street Profissional Center",
-        address:
-          "Av. Cristóvão Colombo, 1918 - sala 303 - Floresta, Porto Alegre - RS",
       },
     ],
     socialCards: {
