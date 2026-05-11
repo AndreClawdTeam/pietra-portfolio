@@ -4,8 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 interface TestimonialData {
-  imageUrl: string;
-  name: string;
+  imageUrl?: string;
+  name?: string;
   score: number; // 1-5 stars
   testimonial: string[]; // Array of paragraphs
 }
@@ -94,9 +94,8 @@ export default function TestimonialCarousel({
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "bg-primary w-4" : "bg-gray-300"
-              }`}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? "bg-primary w-4" : "bg-gray-300"
+                }`}
               aria-label={`Go to testimonial ${index + 1}`}
             ></button>
           ))}
@@ -130,19 +129,19 @@ export default function TestimonialCarousel({
         {/* Header: Profile Image on left, Name and Stars on right */}
         <div className="flex items-center mb-5">
           {/* Profile image */}
-          <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+          {currentTestimonial.imageUrl ? <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
             <Image
-              src={currentTestimonial.imageUrl}
-              alt={currentTestimonial.name}
+              src={currentTestimonial.imageUrl ?? "/no-avatar.jpg"}
+              alt={currentTestimonial.name ?? "Restrito"}
               fill
               sizes="64px"
               className="object-cover"
             />
-          </div>
+          </div> : null}
 
           {/* Name and Star rating */}
-          <div className="ml-4">
-            <h3 className="font-bold text-lg">{currentTestimonial.name}</h3>
+          <div className={`${currentTestimonial.imageUrl ? "ml-4" : ""} flex flex-col`}>
+            {currentTestimonial.name ? <h3 className="font-bold text-lg">{currentTestimonial.name}</h3> : null}
             <div className="flex space-x-1">
               {Array.from({ length: 5 }).map((_, i) => (
                 <svg
@@ -153,11 +152,10 @@ export default function TestimonialCarousel({
                   stroke={
                     i < currentTestimonial.score ? "none" : "currentColor"
                   }
-                  className={`w-4 h-4 ${
-                    i < currentTestimonial.score
-                      ? "text-yellow-400"
-                      : "text-gray-300"
-                  }`}
+                  className={`w-4 h-4 ${i < currentTestimonial.score
+                    ? "text-yellow-400"
+                    : "text-gray-300"
+                    }`}
                 >
                   <path
                     strokeLinecap="round"

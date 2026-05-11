@@ -133,7 +133,7 @@ export const siteContent = {
     title: "Mentoria Nutri Plus",
     image: {
       alt: "Pietra Fogaça — mentora da Mentoria Nutri Plus",
-      srcDesktop: "/assets/pietra-fogaca/pietra-fogaca-mentoria.jpg",
+      srcDesktop: "/assets/pietra-fogaca/pietra-fogaca-mentoria-desktop.jpeg",
       srcMobile: "/assets/pietra-fogaca/pietra-fogaca-mentoria-mobile.jpg",
     },
     paragraphs: [
@@ -150,27 +150,24 @@ export const siteContent = {
     testimonialsTitle: "O que as mentoradas dizem",
     testimonials: [
       {
-        name: "Mock 1 — substituir",
-        image:
-          "/testimonials/alana-louise-paciente-da-nutricionista-pietra-fogaca.jpeg",
+        name: undefined,
+        image: undefined,
         text: [
-          "Depoimento mock — substituir por feedback real de mentorada. A Mentoria Nutri Plus mudou completamente como eu enxergo meu próprio consultório e como me posiciono pra atrair os pacientes certos.",
+          "Saí cheia de ideias ontem! E, aliás, fechamos os 7k! Rumo aos 10k porque hoje tem mais uma reunião!",
         ],
       },
       {
-        name: "Mock 2 — substituir",
-        image:
-          "/testimonials/clara-angeletti-paciente-da-nutricionista-pietra-fogaca.jpeg",
+        name: undefined,
+        image: undefined,
         text: [
-          "Depoimento mock — substituir por feedback real de mentorada. Em poucas semanas eu já estava mais segura nos atendimentos e fechando pacotes com valor mais alto, sem culpa.",
+          "Já fechei 14k só em uma semana!",
         ],
       },
       {
-        name: "Mock 3 — substituir",
-        image:
-          "/testimonials/laise-matros-paciente-da-nutricionista-pietra-fogaca.jpeg",
+        name: undefined,
+        image: undefined,
         text: [
-          "Depoimento mock — substituir por feedback real de mentorada. A Pietra realmente pega na sua mão. É individual, prático e os resultados aparecem na consulta e no faturamento.",
+          "To fechando muitos planos! Eu tinha estimado 120 mil esse mês, mas já estamos em 140 mil e ainda tem 4 consultas até fechar o mês!",
         ],
       },
     ],

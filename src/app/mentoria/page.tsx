@@ -71,7 +71,7 @@ export default function MentoriaPage() {
             {/* Carrossel — full width, abaixo das duas colunas */}
             <div className="sm:mt-6 overflow-hidden">
               <div className="pt-8">
-                <TestimonialCarousel testimonials={mentoriaTestimonialData} />
+                <TestimonialCarousel testimonials={mentoriaTestimonialData} className="min-h-64" />
 
               </div>
             </div>
