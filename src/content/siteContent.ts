@@ -20,6 +20,7 @@ export const siteContent = {
       { label: "Método", href: "#metodo" },
       { label: "FAQ", href: "#faq" },
       { label: "Contato", href: "#contato" },
+      { label: "Mentoria", href: "/mentoria" },
       { label: "Blog", href: "/blog" },
       { label: "Ebooks e Cursos", href: "/ebooks" },
     ],
@@ -125,6 +126,54 @@ export const siteContent = {
       "Acredito em um processo nutricional baseado em três pilares: Conhecimento, Consciência e Comportamento. Essa é a base do meu método 3C’s, construído com base em ciência, prática clínica e muita escuta.",
     ],
     ctaText: "QUERO TRANSFORMAR A MINHA RELAÇÃO COM A COMIDA",
+  },
+
+  // Mentoria Nutri Plus (página /mentoria — voltada a nutricionistas)
+  mentoria: {
+    title: "Mentoria Nutri Plus",
+    image: {
+      alt: "Pietra Fogaça — mentora da Mentoria Nutri Plus",
+      srcDesktop: "/assets/pietra-fogaca/pietra-fogaca-mentoria.jpg",
+      srcMobile: "/assets/pietra-fogaca/pietra-fogaca-mentoria-mobile.jpg",
+    },
+    paragraphs: [
+      "A Mentoria Nutri Plus foi criada para nutricionistas que desejam se POSICIONAR com estratégia, ter segurança clínica no atendimento e construir uma carreira mais valorizada e lucrativa.",
+      "Mais do que teoria, é uma mentoria prática e 100% individual, pensada para te ajudar a viver bem da nutrição, fortalecer seu posicionamento e desenvolver um atendimento que gere resultados para seus pacientes e também para a sua carreira.",
+      "Se você sente que tem potencial, mas ainda não consegue transformar isso em reconhecimento, constância e faturamento, a Mentoria Nutri Plus pode ser o próximo passo da sua jornada.",
+      "Eu irei pegar na sua mão e te guiarei até o objetivo final. O seu negócio será a minha meta!",
+    ],
+    whatsappUrl:
+      "https://wa.me/5511991538151?text=Vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20a%20Mentoria%20Nutri%20Plus!",
+    formUrl: "https://forms.gle/mie2GEVmbFsyGTRR7",
+    primaryCtaText: "QUERO SABER MAIS",
+    secondaryCtaText: "Preencher formulário de interesse",
+    testimonialsTitle: "O que as mentoradas dizem",
+    testimonials: [
+      {
+        name: "Mock 1 — substituir",
+        image:
+          "/testimonials/alana-louise-paciente-da-nutricionista-pietra-fogaca.jpeg",
+        text: [
+          "Depoimento mock — substituir por feedback real de mentorada. A Mentoria Nutri Plus mudou completamente como eu enxergo meu próprio consultório e como me posiciono pra atrair os pacientes certos.",
+        ],
+      },
+      {
+        name: "Mock 2 — substituir",
+        image:
+          "/testimonials/clara-angeletti-paciente-da-nutricionista-pietra-fogaca.jpeg",
+        text: [
+          "Depoimento mock — substituir por feedback real de mentorada. Em poucas semanas eu já estava mais segura nos atendimentos e fechando pacotes com valor mais alto, sem culpa.",
+        ],
+      },
+      {
+        name: "Mock 3 — substituir",
+        image:
+          "/testimonials/laise-matros-paciente-da-nutricionista-pietra-fogaca.jpeg",
+        text: [
+          "Depoimento mock — substituir por feedback real de mentorada. A Pietra realmente pega na sua mão. É individual, prático e os resultados aparecem na consulta e no faturamento.",
+        ],
+      },
+    ],
   },
 
   // Testimonials
