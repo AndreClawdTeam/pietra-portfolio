@@ -118,7 +118,7 @@ export const siteContent = {
     crn: "94003",
     image: {
       alt: "Pietra Fogaça Nutricionista com Jaleco",
-      src: "/assets/sobre-a-nutricionista-pietra-fogaca.jpg",
+      src: "/assets/pietra-fogaca/pietra-fogaca-nutricionista-comportamental.jpeg",
     },
     paragraphs: [
       "Nutricionista formada pela Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental. Atendo mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem — e tenho olhar especial para quem está em tratamento com Mounjaro (tirzepatida) e busca um acompanhamento clínico sério para potencializar resultados, preservar massa magra e construir hábitos que sustentem o emagrecimento muito além da medicação.",
