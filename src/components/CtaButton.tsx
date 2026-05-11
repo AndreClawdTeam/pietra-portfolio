@@ -4,7 +4,7 @@ import siteContent from "@/content/siteContent";
 import { reportConversion } from "@/lib/gtag";
 
 export const ctaButtonColorCn =
-  "bg-green-600 text-white font-medium hover:bg-green-700 transition duration-300";
+  "bg-gradient-to-br from-emerald-700 to-emerald-900 text-white font-medium hover:from-emerald-800 hover:to-emerald-950 shadow-md shadow-emerald-900/20 transition duration-300";
 
 export function CtaButton(props: { content: string; className?: string }) {
   return (
