@@ -31,11 +31,10 @@ export default function Header({
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background shadow-md py-2"
-          : "bg-background md:bg-transparent py-4"
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+        ? "bg-background shadow-md py-2"
+        : "bg-background md:bg-transparent py-4"
+        }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
@@ -55,7 +54,7 @@ export default function Header({
             {/* Mobile CTA button */}
             <CtaButton
               content={siteContent.navigation.ctaMobile.label}
-              className="!px-4 !py-2"
+              className="!px-4 !py-2 text-[0.8rem] mr-4"
             />
 
             {/* Mobile menu button */}
@@ -111,9 +110,8 @@ export default function Header({
 
         {/* Mobile menu */}
         <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${
-            isMenuOpen ? "max-h-70 mt-4" : "max-h-0"
-          }`}
+          className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-70 mt-4" : "max-h-0"
+            }`}
         >
           <nav className="flex flex-col space-y-4 py-4">
             {links.map((link, index) => (
@@ -166,10 +164,9 @@ function NavLink({
       className={`
         ${className}
         transition-colors duration-300 font-medium text-lg
-        ${
-          isButton
-            ? `${ctaButtonColorCn} px-4 py-2 rounded-full`
-            : "text-foreground hover:text-primary"
+        ${isButton
+          ? `${ctaButtonColorCn} px-4 py-2 rounded-full text-[0.9rem]`
+          : "text-foreground hover:text-primary"
         }
       `}
     >

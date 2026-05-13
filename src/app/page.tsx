@@ -44,10 +44,10 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10 pb-12 pt-12 md:pt-0 md:pb-0">
           <div className="md:flex md:items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-tertiary leading-tight">
                 {siteContent.hero.headline}
               </h1>
-              <p className="text-lg md:text-xl text-foreground mb-8">
+              <p className="text-lg md:text-xl text-tertiary mb-8">
                 {siteContent.hero.description}
               </p>
               <CtaButton
@@ -101,7 +101,7 @@ export default function Home() {
                   alt={siteContent.aboutPietra.image.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
               </div>
               <p className="text-xs text-muted text-center mt-1">

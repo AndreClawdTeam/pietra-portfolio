@@ -115,15 +115,15 @@ export const siteContent = {
   // About Pietra section
   aboutPietra: {
     title: "Sobre Pietra Fogaça",
-    crn: "20888D",
+    crn: "94003",
     image: {
       alt: "Pietra Fogaça Nutricionista com Jaleco",
-      src: "/assets/sobre-a-nutricionista-pietra-fogaca.jpg",
+      src: "/assets/pietra-fogaca/pietra-fogaca-nutricionista-comportamental.jpeg",
     },
     paragraphs: [
-      "Nutricionista formada na Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental e foco no atendimento de mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem.",
-      "Mais de 100 mulheres já passaram pelo meu acompanhamento e reencontraram o prazer de comer, de se olhar no espelho e de se priorizar.",
-      "Acredito em um processo nutricional baseado em três pilares: Conhecimento, Consciência e Comportamento. Essa é a base do meu método 3C’s, construído com base em ciência, prática clínica e muita escuta.",
+      "Nutricionista formada pela Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental. Atendo mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem — e tenho olhar especial para quem está em tratamento com Mounjaro (tirzepatida) e busca um acompanhamento clínico sério para potencializar resultados, preservar massa magra e construir hábitos que sustentem o emagrecimento muito além da medicação.",
+      "Já são mais de 100 mulheres acompanhadas — algumas reencontrando o prazer de comer depois de anos brigadas com a comida, outras finalmente conseguindo emagrecer com saúde durante o uso de análogos de GLP-1. Em comum, todas voltaram a se olhar no espelho com mais carinho e a se priorizar.",
+      "Meu trabalho é baseado em três pilares: Conhecimento, Consciência e Comportamento — a essência do meu método 3C’s, construído com ciência, prática clínica e muita escuta. Porque emagrecer de forma sustentável não é sobre cortar, é sobre entender.",
     ],
     ctaText: "QUERO TRANSFORMAR A MINHA RELAÇÃO COM A COMIDA",
   },
@@ -273,7 +273,7 @@ export const siteContent = {
       {
         question: "Você atende online também?",
         answer:
-          "Sim! Atendo tanto presencialmente em São Paulo e Porto Alegre, quanto online para clientes de todo o Brasil. A abordagem é igualmente eficaz em ambos os formatos.",
+          "Sim! Atendo presencialmente em São Paulo e online para clientes de todo o Brasil. A abordagem é igualmente eficaz em ambos os formatos.",
       },
       {
         question: "Preciso seguir uma dieta restritiva?",
@@ -309,12 +309,6 @@ export const siteContent = {
         label: "Núcleo Haya",
         address:
           "João Cachoeira, 488 - conjunto 1009 - Itaim Bibi, São Paulo - SP",
-      },
-      {
-        city: "Porto Alegre",
-        label: "Wall Street Profissional Center",
-        address:
-          "Av. Cristóvão Colombo, 1918 - sala 303 - Floresta, Porto Alegre - RS",
       },
     ],
     socialCards: {
