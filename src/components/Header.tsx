@@ -33,7 +33,7 @@ export default function Header({
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
         ? "bg-background shadow-md py-2"
-        : "bg-background md:bg-transparent py-4"
+        : "bg-background lg:bg-transparent py-4"
         }`}
     >
       <div className="container mx-auto px-6">
@@ -50,7 +50,7 @@ export default function Header({
           </Link>
 
           {/* Mobile menu */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             {/* Mobile CTA button */}
             <CtaButton
               content={siteContent.navigation.ctaMobile.label}
@@ -59,7 +59,7 @@ export default function Header({
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden text-foreground focus:outline-none"
+              className="lg:hidden text-foreground focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg
@@ -89,7 +89,7 @@ export default function Header({
           </div>
 
           {/* Desktop menu */}
-          <nav className="hidden md:flex space-x-8 items-center">
+          <nav className="hidden lg:flex space-x-6 xl:space-x-8 items-center">
             {links.map((link, index) => (
               <NavLink
                 key={index}
@@ -110,7 +110,7 @@ export default function Header({
 
         {/* Mobile menu */}
         <div
-          className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-70 mt-4" : "max-h-0"
+          className={`lg:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-70 mt-4" : "max-h-0"
             }`}
         >
           <nav className="flex flex-col space-y-4 py-4">
@@ -131,7 +131,7 @@ export default function Header({
               href={siteContent.navigation.cta.href}
               isButton={true}
               onClick={() => setIsMenuOpen(false)}
-              className="hidden md:block"
+              className="hidden lg:block"
             >
               {siteContent.navigation.cta.label}
             </NavLink>
@@ -163,9 +163,9 @@ function NavLink({
       onClick={onClick}
       className={`
         ${className}
-        transition-colors duration-300 font-medium text-lg
+        transition-colors duration-300 font-medium text-sm xl:text-lg
         ${isButton
-          ? `${ctaButtonColorCn} px-4 py-2 rounded-full text-[0.9rem]`
+          ? `${ctaButtonColorCn} px-3 xl:px-4 py-2 rounded-full text-[0.9rem]`
           : "text-foreground hover:text-primary"
         }
       `}
