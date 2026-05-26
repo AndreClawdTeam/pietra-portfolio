@@ -35,20 +35,20 @@ export const siteContent = {
 
   // Hero section
   hero: {
-    headline: "Já tentou de tudo e nada funcionou?",
+    headline: "Usa ou pensa em usar Mounjaro?",
     description:
-      "Eu te ajudo a emagrecer de forma leve, sem culpa, sem dieta restritiva e sem abrir mão da sua vida social.",
+      "Então venha potencializar seus resultados comigo!",
     ctaText: "AGENDAR CONSULTA",
     image: {
       alt: "Pietra Fogaça - Nutricionista",
-      src: "/assets/nutricionista-pietra-fogaca-esperando-pra-atender-voce.jpg",
+      src: "/assets/pietra-fogaca/nutricionista-pietra-fogaca.jpeg",
     },
   },
 
   // Stats section
   stats: [
     {
-      value: 400,
+      value: 980,
       label: "eliminados com o método 3C's",
       suffix: "kg+",
     },
@@ -123,7 +123,7 @@ export const siteContent = {
     paragraphs: [
       "Nutricionista formada pela Universidade Federal do Rio Grande do Sul, com especialização em Nutrição Comportamental. Atendo mulheres que sofrem com compulsão alimentar, efeito sanfona e autossabotagem — e tenho olhar especial para quem está em tratamento com Mounjaro (tirzepatida) e busca um acompanhamento clínico sério para potencializar resultados, preservar massa magra e construir hábitos que sustentem o emagrecimento muito além da medicação.",
       "Já são mais de 100 mulheres acompanhadas — algumas reencontrando o prazer de comer depois de anos brigadas com a comida, outras finalmente conseguindo emagrecer com saúde durante o uso de análogos de GLP-1. Em comum, todas voltaram a se olhar no espelho com mais carinho e a se priorizar.",
-      "Meu trabalho é baseado em três pilares: Conhecimento, Consciência e Comportamento — a essência do meu método 3C’s, construído com ciência, prática clínica e muita escuta. Porque emagrecer de forma sustentável não é sobre cortar, é sobre entender.",
+      "Meu trabalho é baseado no Método 3C’s, especializado em emagrecimento de qualidade, preservação de massa muscular e desenvolvimento de hábitos que facilitam a manutenção do peso depois. Porque emagrecer de forma sustentável não é sobre cortar, é sobre entender.",
     ],
     ctaText: "QUERO TRANSFORMAR A MINHA RELAÇÃO COM A COMIDA",
   },
@@ -268,7 +268,7 @@ export const siteContent = {
       {
         question: "Como funciona o método 3C's?",
         answer:
-          "O método 3C's trabalha com três pilares: Conhecimento (entender a relação emocional com a comida), Consciência (desenvolver atenção plena na alimentação) e Comportamento (transformar hábitos de forma sustentável). Este método foi desenvolvido especialmente para mulheres que descontam emoções na comida.",
+          "O método 3C's trabalha com três pilares: Conhecimento (entender a relação emocional com a comida), Consciência (desenvolver atenção plena na alimentação) e Comportamento (transformar hábitos de forma sustentável). Este método é especializado em emagrecimento de qualidade, preservação de massa muscular e desenvolvimento de hábitos que facilitam a manutenção do peso depois.",
       },
       {
         question: "Você atende online também?",
