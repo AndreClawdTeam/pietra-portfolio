@@ -77,10 +77,10 @@ export function Footer() {
             <p>
               E-mail:{" "}
               <Link
-                href="mailto:agendamento@nutricionistapietra.com.br"
+                href={`mailto:${siteContent.footer.email}`}
                 className="text-muted hover:text-tertiary-foreground underline!"
               >
-                agendamento@nutricionistapietra.com.br
+                {siteContent.footer.email}
               </Link>
             </p>
             <p>
