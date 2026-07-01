@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import siteContent from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade | Nutricionista Pietra Fogaça",
@@ -31,10 +32,10 @@ export default function PoliticaDePrivacidade() {
           <li>
             <strong>E-mail de contato:</strong>{" "}
             <a
-              href="mailto:agendamento@nutricionistapietra.com.br"
+              href={`mailto:${siteContent.footer.email}`}
               className="underline! hover:text-tertiary-foreground"
             >
-              agendamento@nutricionistapietra.com.br
+              {siteContent.footer.email}
             </a>
           </li>
           <li>
@@ -269,10 +270,10 @@ export default function PoliticaDePrivacidade() {
         <p className="mt-3 text-sm">
           Para exercer qualquer um desses direitos, entre em contato pelo e-mail{" "}
           <a
-            href="mailto:agendamento@nutricionistapietra.com.br"
+            href={`mailto:${siteContent.footer.email}`}
             className="underline! hover:text-tertiary-foreground"
           >
-            agendamento@nutricionistapietra.com.br
+            {siteContent.footer.email}
           </a>
           . Responderemos em até 15 dias úteis.
         </p>
@@ -370,10 +371,10 @@ export default function PoliticaDePrivacidade() {
           <li>
             <strong>E-mail:</strong>{" "}
             <a
-              href="mailto:agendamento@nutricionistapietra.com.br"
+              href={`mailto:${siteContent.footer.email}`}
               className="underline! hover:text-tertiary-foreground"
             >
-              agendamento@nutricionistapietra.com.br
+              {siteContent.footer.email}
             </a>
           </li>
           <li>

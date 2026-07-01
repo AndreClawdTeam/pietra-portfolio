@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import siteContent from "@/content/siteContent";
 
 export const metadata: Metadata = {
   title: "Termos de Uso | Nutricionista Pietra Fogaça",
@@ -256,10 +257,10 @@ export default function TermosDeUso() {
           <li>
             <strong>E-mail:</strong>{" "}
             <a
-              href="mailto:agendamento@nutricionistapietra.com.br"
+              href={`mailto:${siteContent.footer.email}`}
               className="underline! hover:text-tertiary-foreground"
             >
-              agendamento@nutricionistapietra.com.br
+              {siteContent.footer.email}
             </a>
           </li>
           <li>
