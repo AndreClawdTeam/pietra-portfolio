@@ -37,14 +37,14 @@ export default function Header({
         }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center">
+        <div className="flex justify-between items-center gap-3">
+          <Link href="/" className="flex min-w-0 items-center">
             <Image
-              src="/logo/logo-transparent.png"
+              src="/logo/pietra-falcone-wordmark.png"
               alt={siteContent.navigation.brand}
-              width={120}
-              height={40}
-              className="h-10 w-auto"
+              width={230}
+              height={32}
+              className="h-6 lg:h-8 w-auto object-contain object-left"
               priority
             />
           </Link>
