@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import siteContent from "@/content/siteContent";
 import Script from "next/script";
+import { OverscrollBackground } from "@/components/OverscrollBackground";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -87,6 +88,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${poppins.variable} font-sans font-light`}>
+        <OverscrollBackground />
         {children}
         <Script
           id="fb-pixel"
