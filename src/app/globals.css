@@ -35,7 +35,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/*
+ * Safari on macOS paints the overscroll (rubber-band) area with the <html> background.
+ * Top: the color behind the header. Below lg the header is white; from lg it is transparent over the hero.
+ * Bottom: the footer color. OverscrollBackground sets data-overscroll.
+ */
+html {
+  @apply bg-background lg:bg-accent;
+}
+
+html[data-overscroll="bottom"] {
+  @apply bg-tertiary-deep;
+}
+
 body {
+  min-height: 100dvh;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins);

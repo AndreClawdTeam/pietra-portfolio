@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import siteContent from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade | Nutricionista Pietra Fogaça",
+  title: "Política de Privacidade | Nutricionista Pietra Falcone",
   description:
-    "Saiba como coletamos, usamos e protegemos seus dados pessoais no site da Nutricionista Pietra Fogaça, em conformidade com a LGPD.",
+    "Saiba como coletamos, usamos e protegemos seus dados pessoais no site da Nutricionista Pietra Falcone, em conformidade com a LGPD.",
 };
 
 export default function PoliticaDePrivacidade() {

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import siteContent from "@/content/siteContent";
 import Script from "next/script";
+import { OverscrollBackground } from "@/components/OverscrollBackground";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,13 +14,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: siteContent.site.title,
   description: siteContent.site.description,
-  applicationName: "Nutricionista Pietra Fogaça",
+  applicationName: "Nutricionista Pietra Falcone",
   metadataBase: new URL("https://www.nutricionistapietra.com.br"),
   keywords: [
     "Nutricionista",
     "Nutri",
     "Pietra",
-    "Fogaça",
+    "Falcone",
     "Nutricionista Comportamental",
     "Nutricionista São Paulo",
     "Nutricionista Porto Alegre",
@@ -87,6 +88,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${poppins.variable} font-sans font-light`}>
+        <OverscrollBackground />
         {children}
         <Script
           id="fb-pixel"

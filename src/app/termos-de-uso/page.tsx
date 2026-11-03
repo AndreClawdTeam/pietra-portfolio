@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import siteContent from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Termos de Uso | Nutricionista Pietra Fogaça",
+  title: "Termos de Uso | Nutricionista Pietra Falcone",
   description:
-    "Leia os Termos de Uso do site da Nutricionista Pietra Fogaça e saiba as condições para utilização dos nossos serviços.",
+    "Leia os Termos de Uso do site da Nutricionista Pietra Falcone e saiba as condições para utilização dos nossos serviços.",
 };
 
 export default function TermosDeUso() {
@@ -38,7 +38,7 @@ export default function TermosDeUso() {
         </h2>
         <p className="mb-3">
           O site <strong>www.nutricionistapietra.com.br</strong> é a presença
-          digital da nutricionista <strong>Pietra Fogaça</strong>, com o objetivo
+          digital da nutricionista <strong>Pietra Falcone</strong>, com o objetivo
           de apresentar seus serviços, compartilhar conteúdo educativo sobre
           nutrição e saúde, e facilitar o contato para agendamento de consultas.
         </p>
@@ -115,7 +115,7 @@ export default function TermosDeUso() {
             Transmitir vírus, malware ou qualquer outro código prejudicial
           </li>
           <li>
-            Fazer-se passar pela nutricionista Pietra Fogaça ou por qualquer
+            Fazer-se passar pela nutricionista Pietra Falcone ou por qualquer
             membro da equipe
           </li>
         </ul>
@@ -136,7 +136,7 @@ export default function TermosDeUso() {
           e propriedade intelectual (Lei nº 9.610/1998).
         </p>
         <p className="text-sm">
-          A marca <strong>Pietra Fogaça</strong> e os elementos gráficos
+          A marca <strong>Pietra Falcone</strong> e os elementos gráficos
           associados são marcas registradas ou em processo de registro. Qualquer
           uso não autorizado configura infração e está sujeito às sanções legais
           cabíveis.
