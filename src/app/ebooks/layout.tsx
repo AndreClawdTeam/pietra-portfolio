@@ -6,13 +6,13 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: `Ebooks e Cursos | ${siteContent.site.title}`,
   description: siteContent.site.description,
-  applicationName: "Nutricionista Pietra Fogaça",
+  applicationName: "Nutricionista Pietra Falcone",
   metadataBase: new URL("https://www.nutricionistapietra.com.br"),
   keywords: [
     "Nutricionista",
     "Nutri",
     "Pietra",
-    "Fogaça",
+    "Falcone",
     "Nutricionista Comportamental",
     "Nutricionista São Paulo",
     "Nutricionista Porto Alegre",

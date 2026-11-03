@@ -7,14 +7,14 @@ export const metadata: Metadata = {
   title: `Mentoria Nutri Plus | ${siteContent.site.title}`,
   description:
     "Mentoria prática e individual para nutricionistas que querem se posicionar com estratégia, ter segurança clínica e construir uma carreira mais valorizada e lucrativa.",
-  applicationName: "Nutricionista Pietra Fogaça",
+  applicationName: "Nutricionista Pietra Falcone",
   metadataBase: new URL("https://www.nutricionistapietra.com.br"),
   keywords: [
     "Mentoria Nutri Plus",
     "Mentoria para nutricionistas",
     "Posicionamento para nutricionistas",
     "Carreira em nutrição",
-    "Nutricionista Pietra Fogaça",
+    "Nutricionista Pietra Falcone",
     "Mentoria nutricionista",
     "Nutricionista comportamental mentora",
   ],

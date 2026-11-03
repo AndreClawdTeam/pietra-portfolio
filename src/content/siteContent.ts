@@ -5,7 +5,7 @@ const EMAIL = "pietra@nutricionistapietra.com.br";
 export const siteContent = {
   // General site info
   site: {
-    title: "Pietra Fogaça | Nutricionista Comportamental",
+    title: "Pietra Falcone | Nutricionista Comportamental",
     description:
       "Eu te ajudo a emagrecer de forma leve, sem culpa, sem dieta restritiva e sem abrir mão da sua vida social.",
     address: "R. João Cachoeira, 488 - Conj 1009 - Itaim Bibi, São Paulo",
@@ -14,7 +14,7 @@ export const siteContent = {
 
   // Navigation header
   navigation: {
-    brand: "Nutricionista Pietra Fogaça",
+    brand: "Nutricionista Pietra Falcone",
     links: [
       { label: "Sobre", href: "#sobre" },
       { label: "Método", href: "#metodo" },
@@ -40,7 +40,7 @@ export const siteContent = {
       "Então venha potencializar seus resultados comigo!",
     ctaText: "AGENDAR CONSULTA",
     image: {
-      alt: "Pietra Fogaça - Nutricionista",
+      alt: "Pietra Falcone - Nutricionista",
       src: "/assets/pietra-fogaca/nutricionista-pietra-fogaca.jpeg",
     },
   },
@@ -114,10 +114,10 @@ export const siteContent = {
 
   // About Pietra section
   aboutPietra: {
-    title: "Sobre Pietra Fogaça",
+    title: "Sobre Pietra Falcone",
     crn: "94003",
     image: {
-      alt: "Pietra Fogaça Nutricionista com Jaleco",
+      alt: "Pietra Falcone Nutricionista com Jaleco",
       src: "/assets/pietra-fogaca/pietra-fogaca-nutricionista-comportamental.jpeg",
     },
     paragraphs: [
@@ -132,7 +132,7 @@ export const siteContent = {
   mentoria: {
     title: "Mentoria Nutri Plus",
     image: {
-      alt: "Pietra Fogaça — mentora da Mentoria Nutri Plus",
+      alt: "Pietra Falcone — mentora da Mentoria Nutri Plus",
       srcDesktop: "/assets/pietra-fogaca/pietra-fogaca-mentoria-desktop.jpeg",
       srcMobile: "/assets/pietra-fogaca/pietra-fogaca-mentoria-mobile.jpg",
     },
@@ -337,7 +337,7 @@ export const siteContent = {
 
   // Footer
   footer: {
-    name: "Pietra Fogaça",
+    name: "Pietra Falcone",
     title: "Nutricionista Comportamental",
     email: EMAIL,
     copyright: "Todos os direitos reservados.",
